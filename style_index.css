@@ -1,4 +1,26 @@
   @import url('https://fonts.googleapis.com/css?family=Montserrat:600,800&subset=cyrillic,cyrillic-ext,latin-ext');
+  @media all and (max-width:800px){
+	  a.refs{
+		padding-top: 10%;
+        padding-bottom: 10%;
+ 	 }
+      a.uch{
+        padding-top:3%;
+        padding-bottom:3%;
+        font-size: 20px;
+      }
+  }
+  @media all and (min-width:800px){
+  	a.refs{
+  	  padding-top: 3%;
+        padding-bottom: 3%;
+      }
+      a.uch{
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        font-size: 32px;
+      }
+  }
       body{
         margin: 0px;
         font-family: Montserrat, sans-serif;
@@ -27,8 +49,12 @@
         text-align: center;
         font-size: 35px;
         border: solid white 5px;
-        padding-top: 10%;
-        padding-bottom: 10%;
+      }
+      a.uch{
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        border: solid white 3px;
       }
       a:hover, a:focus, a:active{
         color: black;
