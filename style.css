@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext");
+html{
+  font-size: 14px;
+  word-wrap: break-word;
+  background-color: #eee;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  margin: 0px;
+}
+#content{
+  color: #333333;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0px;
+}
+h1 {
+  font-size: 2rem;
+  border-bottom: solid 1px;
+}
+h2{
+  font-size: 1.55rem;
+}
+h3{
+  font-size: 1.3rem;
+}
+h4{
+  font-size: 1.15rem;
+}
+p{
+  font-size:1rem;
+  line-height:125%;
+  margin-top: 8px;
+}
+#down, #up{
+  text-align: center;
+  border: none;
+  background: none; 
+  height: 100%;
+  width: 50%;
+  bottom: 0px;
+}
+#down{
+  border-right: solid rgba(0,0,0,0.3) 1.5px;
+}
+#up{
+  border-left: solid rgba(0,0,0,0.3) 1.5px;
+}
+#butts{
+  position: fixed;
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  height: 7.5%;
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+}
+a{
+  color: #333;
+  text-decoration: none;
+}
+#sections{
+  font-size: 0.75rem;
+  border: 0px;
+  line-height: 150%;
+  background-color: #ddd;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-left: 2%;
+}
+#prev, #next{
+  color: #333333;
+  font-size: 0.8rem;
+  position:absolute;
+  width:45%;
+  margin-bottom: 4rem;
+}
+#next {
+  text-align: right;
+  right: 5%;
+}
+#prev {
+  text-align: left;
+  left: 5%;
+}
+.tab {
+  margin-left:10%;
+}
+#tableN1a, #tableN1b{
+  overflow-x:auto;
+  display: block;
+  border: none;
+  text-align: center;
+}
+#tableN0{
+  overflow-x: auto;
+  display: block;
+}
+table{
+  border-collapse: collapse;
+}
+select{
+  width: 100%;
+  border: none;
+  color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  font: inherit;
+}
