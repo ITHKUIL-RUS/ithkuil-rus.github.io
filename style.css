@@ -13,7 +13,6 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   padding: 0px;
-  margin-bottom: 8vh;
 }
 h1 {
   font-size: 2rem;
@@ -74,7 +73,7 @@ a{
   font-size: 0.8rem;
   position:absolute;
   width:45%;
-  margin-bottom: 4rem;
+  margin-bottom: 8vh;
 }
 #next {
   text-align: right;
