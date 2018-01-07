@@ -1,48 +1,48 @@
 @font-face{
 	font-family: Advokat;
-	src: local(Advokat), url("../fonts/Advokat.ttf");
+	src: local(Advokat), url("fonts/Advokat.ttf");
 	font-style: normal;
 	font-weight: 400; 
 }
 @font-face{
 	font-family: Advokat;
-	src: local(Advokatblack), url("../fonts/Advokatblack.ttf");
+	src: local(Advokatblack), url("fonts/Advokatblack.ttf");
 	font-style: normal;
 	font-weight: 900; 
 }
 @font-face{
 	font-family: Advokat;
-	src: local(Advokatbold), url("../fonts/Advokatbold.ttf");
+	src: local(Advokatbold), url("fonts/Advokatbold.ttf");
 	font-style: normal;
 	font-weight: 700; 
 }
 @font-face{
 	font-family: Advokat;
-	src: local(Advokatextrabold), url("../fonts/Advokatextrabold.ttf");
+	src: local(Advokatextrabold), url("fonts/Advokatextrabold.ttf");
 	font-style: normal;
 	font-weight: 800; 
 }
 @font-face{
 	font-family: Advokat;
-	src: local(Advokatextralight), url("../fonts/Advokatextralight.ttf");
+	src: local(Advokatextralight), url("fonts/Advokatextralight.ttf");
 	font-style: normal;
 	font-weight: 200; 
 }
 @font-face{
 	font-family: Advokat;
-	src: local(Advokatlight), url("../fonts/Advokatlight.ttf");
+	src: local(Advokatlight), url("fonts/Advokatlight.ttf");
 	font-style: normal;
 	font-weight: 300; 
 }
 @font-face{
 	font-family: Advokat;
-	src: local(Advokatsemibold), url("../fonts/Advokatsemibold.ttf");
+	src: local(Advokatsemibold), url("fonts/Advokatsemibold.ttf");
 	font-style: normal;
 	font-weight: 600; 
 }
 @font-face{
 	font-family: Advokat;
-	src: local(Advokatthin), url("../fonts/Advokatthin.ttf");
+	src: local(Advokatthin), url("fonts/Advokatthin.ttf");
 	font-style: normal;
 	font-weight: 100; 
 }
@@ -72,7 +72,7 @@
 		body{
 			margin: 0px;
 			font-family: Advokat, sans-serif;
-			background-color: #FF5840;
+			background-color: #d0d0d0;
 			color: white;
 			margin-left: calc(10% - 5px);
 			margin-right: calc(10% - 5px);
