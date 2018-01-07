@@ -30,7 +30,7 @@
 			margin-right: calc(10% - 5px);
 		}
 		p{
-			font-weight: 600;
+			font-weight: normal;
 			font-size: 20px;
 			margin: 0px;
 		}
@@ -39,7 +39,7 @@
 			margin-bottom: 5px;
 		}
 		a{
-			font-weight: 800;
+			font-weight: bold;
 			color: white;
 			text-decoration: none;
 		}
