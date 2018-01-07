@@ -1,16 +1,11 @@
-@font-face{
-  font-family: 'Advokat';
-  src: url('../fonts/WebFont.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext");
 html{
   font-size: 18px;
   word-wrap: break-word;
   background-color: #eee;
 }
 body {
-  font-family: Advokat, sans-serif;
+  font-family: "PT Sans", sans-serif;
   margin: 0px;
 }
 #content{
