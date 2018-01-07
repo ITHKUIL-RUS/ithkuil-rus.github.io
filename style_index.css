@@ -1,52 +1,4 @@
-@font-face{
-	font-family: Advokat;
-	src: local(Advokat), url("fonts/Advokat.ttf");
-	font-style: normal;
-	font-weight: 400; 
-}
-@font-face{
-	font-family: Advokat;
-	src: local(Advokatblack), url("fonts/Advokatblack.ttf");
-	font-style: normal;
-	font-weight: 900; 
-}
-@font-face{
-	font-family: Advokat;
-	src: local(Advokatbold), url("fonts/Advokatbold.ttf");
-	font-style: normal;
-	font-weight: 700; 
-}
-@font-face{
-	font-family: Advokat;
-	src: local(Advokatextrabold), url("fonts/Advokatextrabold.ttf");
-	font-style: normal;
-	font-weight: 800; 
-}
-@font-face{
-	font-family: Advokat;
-	src: local(Advokatextralight), url("fonts/Advokatextralight.ttf");
-	font-style: normal;
-	font-weight: 200; 
-}
-@font-face{
-	font-family: Advokat;
-	src: local(Advokatlight), url("fonts/Advokatlight.ttf");
-	font-style: normal;
-	font-weight: 300; 
-}
-@font-face{
-	font-family: Advokat;
-	src: local(Advokatsemibold), url("fonts/Advokatsemibold.ttf");
-	font-style: normal;
-	font-weight: 600; 
-}
-@font-face{
-	font-family: Advokat;
-	src: local(Advokatthin), url("fonts/Advokatthin.ttf");
-	font-style: normal;
-	font-weight: 100; 
-}
-
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic,cyrillic-ext,latin-ext');
 @media all and (max-width:800px){
 	a.refs{
 	padding-top: 10%;
@@ -71,7 +23,7 @@
 }
 		body{
 			margin: 0px;
-			font-family: Advokat, sans-serif;
+			font-family: "PT Sans Narrow", sans-serif;
 			background-color: #050505;
 			color: white;
 			margin-left: calc(10% - 5px);
