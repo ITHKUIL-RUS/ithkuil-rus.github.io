@@ -1,3 +1,9 @@
+@font-face{
+  font-family: 'Advokat';
+  src: url('../fonts/WebFont.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 html{
   font-size: 18px;
   word-wrap: break-word;
