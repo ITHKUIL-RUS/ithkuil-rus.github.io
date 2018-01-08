@@ -1,15 +1,47 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Ифкуиль. Теперь и на русском.</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style_index.css">
-  </head>
-  <body>
-    <h1>Ифкуиль.</h1>
-    <p>Теперь и на русском.</p>
-    <a class="refs" href="uch.html">УЧЕБНИК</a>
-    <a class="refs" href="tests.html">ТЕСТЫ</a>
-    <a class="refs" href="socials.html">СОЦСЕТИ</a>
-  </body>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="style_index.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="fullpage/scrolloverflow.js"></script>
+    <script type="text/javascript" src="fullpage/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="fullpage/test.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          sectionsColor: ['#050505']
+        });
+      });
+    </script>
+
+</head>
+<body>
+<header>
+  <a href="#section0">Ифкуиль</a>
+  <a href="#section1">Грамматический материал</a>
+  <a href="#section2">Тесты</a>
+</header>
+<div id="fullpage">
+  <div class="section" id="section0">
+      <h1>Ифкуиль.</h1>
+      <p>Теперь и на русском.</p>
+  </div>
+  <div class="section" id="section1">
+    <div class="intro">
+        <a class="refs" href="uch.html">ГРАММАТИЧЕСКИЙ МАТЕРИАЛ</a>
+    </div>
+  </div>
+  <div class="section" id="section2">
+    <div class="intro">
+      <a class="refs" href="tests.html">ТЕСТЫ</a>
+    </div>
+  </div>
+</div>
+<footer><p>Работает при поддержке портала <a href='http://speedtalk.ru'>Utopian</a></footer>
+</body>
 </html>
