@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext");
+@media screen and (orientation: portrait){
+  html{
+	font-size: 16px;
+  }
+}
+@media screen and (orientation: landscape){
+  html{
+	font-size: 20px;
+  }
+}
 html{
-  font-size: 18px;
   word-wrap: break-word;
-  background-color: #eee;
+  background-color: #FAFAFA;
 }
 body {
   font-family: "PT Sans", sans-serif;
@@ -48,7 +57,7 @@ p{
 }
 #butts{
   position: fixed;
-  background-color: rgb(240, 240, 240);
+  background-color: #FAFAFA;
   text-align: center;
   height: 7.5vh;
   left: 0px;
@@ -87,17 +96,19 @@ a{
   margin-left:10%;
 }
 #tableN1a, #tableN1b{
-  overflow-x:auto;
-  display: block;
-  border: none;
   text-align: center;
 }
-#tableN0{
+table{
   overflow-x: auto;
   display: block;
-}
-table{
+  border: none;
   border-collapse: collapse;
+}
+img.small_imgs{
+  height: 7vh;
+}
+img.big_imgs{
+  width: 100%;
 }
 select{
   width: 100%;
