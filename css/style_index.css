@@ -7,7 +7,7 @@ body{
 }
 
 p{
-	margin: 0px;
+	margin: 10px;
 }
 a{
 	font-weight: bold;
@@ -81,6 +81,8 @@ html {
     }
 .button{
 	display: block;
+	margin: 5vw 15vw;
+	text-align: center;
 	padding: 10px;
 	border: 2px solid white;
 }

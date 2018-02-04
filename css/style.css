@@ -117,9 +117,6 @@ img.medium_imgs{
 img.big_imgs{
   width: 100%;
 }
-img.medium_imgs{
-  
-}
 select{
   width: 100%;
   border: none;
@@ -175,7 +172,7 @@ select{
     left: 0;
     overflow: hidden;
     width: 0%;
-    height: 1vh;
+    height: 0.5vh;
     z-index: 50;
 }
 
@@ -196,8 +193,12 @@ background: linear-gradient(to left, #f64150, #ff004f); /*Standard*/
 .gap{
 	position: fixed;
 	top: 0;
-	width: 1px;
-	height: 1vh;
-    background-color: #f64150;
+	width: 0.55vw;
+	height: 0.5vh;
+    background: #f64150; /* Old Browsers */
+background: -webkit-linear-gradient(right,#f64150,#ff004f); /*Safari 5.1-6*/
+background: -o-linear-gradient(right,#f64150,#ff004f); /*Opera 11.1-12*/
+background: -moz-linear-gradient(right,#f64150,#ff004f); /*Fx 3.6-15*/
+background: linear-gradient(to left, #f64150, #ff004f); /*Standard*/
     z-index: 160;
 }
