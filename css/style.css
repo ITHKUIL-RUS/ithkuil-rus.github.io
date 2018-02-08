@@ -9,6 +9,14 @@
 	font-size: 20px;
   }
 }
+@supports not(height: 7.5vh){
+	#butts{
+		height: 50px;
+	}
+	#prev, #next{
+		margin-bottom: 60px;
+	}
+}
 html{
   word-wrap: break-word;
   background-color: #FAFAFA;
@@ -81,7 +89,7 @@ a{
   color: #333333;
   font-size: 0.8rem;
   position:absolute;
-  width:45%;
+  width: 45%;
   margin-bottom: 8vh;
 }
 #next {
@@ -106,7 +114,7 @@ table{
   border-collapse: collapse;
 }
 td.highlighted{
-	background-color:rgba(0,0,0,0.075);
+	background-color:rgba(0, 0, 0, 0.075);
 }
 img.small_imgs{
   height: 7vh;
@@ -135,9 +143,9 @@ select{
     left: 0;
     z-index: 1050;
     opacity: 0;
-    -webkit-transition: opacity 400ms ease-in; 
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
+    -webkit-transition: opacity 600ms ease-in; 
+    -moz-transition: opacity 600ms ease-in;
+    transition: opacity 600ms ease-in;
     pointer-events: none;
     margin: 0;
     padding: 0;
@@ -156,16 +164,18 @@ select{
 	left: 5vw;
     height: 70vh;
     width: 90vw;
-    background-color: #eee;
-    border-radius: 1rem;
+    background-color: white;
+    border-radius: 3rem;
     outline: 0;
     overflow-x: auto;
     overflow-y: hidden;
 }
 .modal-content img{
+	position: absolute;
+	left: 0;
+	top: 0;
 	height: 70vh;
 }
-
 #scrollbar {
     position: fixed;
     top: 0;
@@ -183,22 +193,5 @@ select{
     width: 100%;
     height: 100%;
     z-index:75;
-    background: #f64150; /* Old Browsers */
-background: -webkit-linear-gradient(right,#f64150,#ff004f); /*Safari 5.1-6*/
-background: -o-linear-gradient(right,#f64150,#ff004f); /*Opera 11.1-12*/
-background: -moz-linear-gradient(right,#f64150,#ff004f); /*Fx 3.6-15*/
-background: linear-gradient(to left, #f64150, #ff004f); /*Standard*/
-}
-
-.gap{
-	position: fixed;
-	top: 0;
-	width: 0.55vw;
-	height: 0.5vh;
-    background: #f64150; /* Old Browsers */
-background: -webkit-linear-gradient(right,#f64150,#ff004f); /*Safari 5.1-6*/
-background: -o-linear-gradient(right,#f64150,#ff004f); /*Opera 11.1-12*/
-background: -moz-linear-gradient(right,#f64150,#ff004f); /*Fx 3.6-15*/
-background: linear-gradient(to left, #f64150, #ff004f); /*Standard*/
-    z-index: 160;
+    background: #f64150;
 }

@@ -7,12 +7,6 @@ body.onload=function(){
 		aGap,
 		dh  = Math.max(body.scrollHeight, body.offsetHeight,  html.clientHeight, html.scrollHeight, html.offsetHeight),
 		wh  = window.innerHeight;
-		
-	for(var i=0; i<document.getElementsByTagName("h2").length; i++){
-		heads[i] = document.getElementsByTagName("h2")[i].offsetTop;
-		gaps[i] = (heads[i] / (dh-wh)) * 100;
-		document.getElementById("scrollbar").insertAdjacentHTML("beforeBegin", '<div class="gap" style="left: ' + gaps[i] + 'vw"></div>');
-	}
 };
 bar_bg.style.minWidth = document.width + "px";
 
