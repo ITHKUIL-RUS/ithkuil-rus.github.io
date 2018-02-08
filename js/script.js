@@ -1,24 +1,18 @@
 var bar_bg = document.getElementById("scrollbar-bg"),
     body = document.body,
     html = document.documentElement;
-body.onload=function(){
-	var heads = [],
-		gaps = [],
-		aGap,
-		dh  = Math.max(body.scrollHeight, body.offsetHeight,  html.clientHeight, html.scrollHeight, html.offsetHeight),
-		wh  = window.innerHeight;
-};
-bar_bg.style.minWidth = document.width + "px";
+
+bar_bg.style.minWidth = window.innerWidth + "px";
 
 document.getElementsByTagName("body")[0].onresize = function() {
 	// Update the gradient width
-	bar_bg.style.minWidth = document.width + "px";
+	bar_bg.style.minWidth = window.innerWidth + "px";
 }
 
 window.onscroll = function() {
 	// Change the width of the progress bar
 	var bar = document.getElementById("scrollbar"),
-		dw  = document.documentElement.clientWidth,
+		dw  = window.innerWidth,
 		dh  = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight ),
 		wh  = window.innerHeight,

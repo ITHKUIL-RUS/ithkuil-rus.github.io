@@ -5,7 +5,10 @@ body{
 	background-color: #111111;
 	color: white;
 }
-
+.page{
+	width: 100%;
+	height: 100vh;
+}
 p{
 	margin: 10px;
 }
@@ -17,68 +20,14 @@ a{
 a:hover, a:focus, a:active{
 	color: #C9C9C9;
 }
-p.header{
+h1{
 	font-size: 2.5rem;
 	font-weight: bold;
 }
-p.subhead{
+h2{
 	font-size: 1.5rem;
 	font-weight: bold;
 }
-html {
-      height: 100vh;
-    }
-    body {
-      position: relative;
-      margin: 0;
-      height: 100vh;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrapper {
-      height: 100vh !important;
-  	height: 100vh;
-  	margin: 0 auto; 
-  	overflow: auto;
-    }
-    
-    .main {
-      float: left;
-      width: 100%;
-      margin: 0 auto;
-    }
-    
-    .clear {
-      width: auto;
-    }
-    .main section .page_container {
-      position: relative;
-      margin: 0 auto 0;
-      z-index: 3;
-    }
-    .main section{
-      overflow: hidden;
-      background-color: #111111;
-      color: white;
-    }
-    .main section.page1{
-      position: relative;
-      left: 10vw;
-      top: 40vh;
-      width: 80vw;
-    }
-    .main section .header, .main section .subhead{
-      text-align: center;
-    }
-    .main section.page2 {
-      
-    }
-    .main section.page3 {
-      
-    }
-    .main section.page5 table td{
-    	vertical-align: top;
-    	width: 50%;
-    }
 .button{
 	display: block;
 	margin: 5vw 15vw;
