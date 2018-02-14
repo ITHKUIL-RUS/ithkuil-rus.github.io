@@ -549,14 +549,14 @@ select {
 .exit{
 	position: fixed;
 	right: 6.5px;
-	top: -7.5vw;
-	width: 15vw;
-	height: 15vw;
-	border-radius: 10vw;
+	top: -35px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
 	background: #fafafa;
 	z-index: 40;
 	text-transform: uppercase;
-	line-height: 20vw;
+	line-height: 100px;
 	font-size: 0.8rem;
 	border: solid black 1.5px;
 	text-align: center;
