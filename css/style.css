@@ -132,6 +132,10 @@
     body.toc-sidebar {
         overflow: hidden;
     }
+    body:not(.toc-inline) #butts{
+        left: 0;
+        width: 100vw;
+    }
 }
 
 /* Sidebar with its own space */
@@ -541,4 +545,22 @@ select {
     height: 100%;
     z-index: 75;
     background: #f64150;
+}
+.exit{
+	position: fixed;
+	right: 6.5px;
+	top: -7.5vw;
+	width: 15vw;
+	height: 15vw;
+	border-radius: 10vw;
+	background: #fafafa;
+	z-index: 40;
+	text-transform: uppercase;
+	line-height: 20vw;
+	font-size: 0.8rem;
+	border: solid black 1.5px;
+	text-align: center;
+}
+a:hover, a:focus, a:active{
+	color: #FF4515;
 }

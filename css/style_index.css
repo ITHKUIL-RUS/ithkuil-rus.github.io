@@ -1,36 +1,96 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext');
-body{
-	margin: 0px;
-	font-family: "PT Sans", sans-serif;
-	background-color: #111111;
-	color: white;
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext");
+body { 
+    font-family: "PT Sans", sans-serif;
+    background-color: #121212;
+    color: whitesmoke;
+  display: grid;
+ grid-template-areas: 
+      "header"
+      "nav"
+      "article";
+    grid-template-rows: 80px auto 1fr;
+    grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin: 0;
+  }  
+header, article, nav {
+  padding: 1.2em;
+  }
+header {
+  grid-area: header;
+  }
+nav {
+  grid-area: nav;
+  }
+article { 
+  grid-area: article;
+  }
+
+@media all and (orientation: portrait) {
+    .circle{
+        font-size: 1.5rem;
+    }
 }
-.page{
-	width: 100%;
-	height: 100vh;
-}
-p{
-	margin: 10px;
-}
+ @media all and (orientation: landscape) {
+    .circle{
+        font-size: 4rem;
+    }
+}   	
 a{
 	font-weight: bold;
 	color: white;
 	text-decoration: none;
 }
 a:hover, a:focus, a:active{
-	color: #C9C9C9;
+	color: #FF4515;
 }
-h1{
-	font-size: 2.5rem;
-	font-weight: bold;
+nav{
+	background-color: whitesmoke;
 }
-h2{
-	font-size: 1.5rem;
+nav a{
+	color: #151212;
+	padding: 5px 0;
+	text-transform: uppercase;
+	display: block;
+}
+div{
+	border-top: solid white 1px;
+	border-bottom: solid white 1px;
+	margin: 15px 0;
+}
+header{
+	text-align: center;
 	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+}
+p{
+	line-height: 130%;
+	margin-top: 0;
+}
+.circle{
+	text-align: center;
+	vertical-align: middle;
+	width: 20vw;
+	height: 20vw;
+	line-height: 20vw;
+
+	margin: 0;
+	border: double white 9px;
+	border-radius: 10em;
+}
+table{
+	border-collapse: collapse;
+}
+#circle td{
+	width: 20vw;
 }
 .button{
+	position: relative;
+	left: calc(15vw - 1.2em - 10px);
 	display: block;
-	margin: 5vw 15vw;
+	width: 70vw;
+	margin: 5vw 0;
 	text-align: center;
 	padding: 10px;
 	border: 2px solid white;
