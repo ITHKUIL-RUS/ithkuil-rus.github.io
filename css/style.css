@@ -3,12 +3,27 @@
     html {
         font-size: 15px;
     }
+    #butts{
+        height: 7.5vh;
+    }
+    #prev, #next{
+        margin-bottom: 8vh;
+    }
 }
 
 @media screen and (orientation: landscape) {
     html {
         font-size: 20px;
     }
+    #butts{
+        height: 45px;
+    }
+    #prev, #next{
+        margin-bottom: 60px;
+    }
+}
+#content{
+    margin-bottom: 100px;
 }
 
 /******************************************************************************/
@@ -409,8 +424,7 @@ p {
     position: fixed;
     background-color: #fafafa;
     text-align: center;
-    height: 7.5vh;
-    
+
     width: 100%;
     bottom: 0px;
 }
@@ -426,7 +440,6 @@ a {
     font-size: 0.8rem;
     position: absolute;
     width: 45%;
-    margin-bottom: 8vh;
 }
 
 #next {
