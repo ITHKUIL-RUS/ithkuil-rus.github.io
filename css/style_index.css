@@ -1,37 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext");
+
 body { 
     font-family: "PT Sans", sans-serif;
     background-color: #121212;
     color: whitesmoke;
-  display: grid;
- grid-template-areas: 
-      "header"
-      "nav"
-      "article";
-    grid-template-rows: 80px auto 1fr;
-    grid-template-columns: 1fr;
-  grid-gap: 10px;
-  margin: 0;
+    margin: 0;
   }  
 header, article, nav {
   padding: 1.2em;
   }
-header {
-  grid-area: header;
-  }
-nav {
-  grid-area: nav;
-  }
-article { 
-  grid-area: article;
-  }
-
 @media all and (orientation: portrait) {
+    html{
+        font-size: 13px;
+    }
     .circle{
         font-size: 1.5rem;
     }
 }
  @media all and (orientation: landscape) {
+    html{
+        font-size: 20px;
+    }
     .circle{
         font-size: 4rem;
     }
@@ -74,7 +63,6 @@ p{
 	width: 20vw;
 	height: 20vw;
 	line-height: 20vw;
-
 	margin: 0;
 	border: double white 9px;
 	border-radius: 10em;
@@ -87,11 +75,12 @@ table{
 }
 .button{
 	position: relative;
-	left: calc(15vw - 1.2em - 10px);
+    font-size: 1.3rem;
+	left: calc(25vw - 1.2em - 10px);
 	display: block;
-	width: 70vw;
+	width: 50vw;
 	margin: 5vw 0;
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
 	border: 2px solid white;
 }
