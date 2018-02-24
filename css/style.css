@@ -495,50 +495,6 @@ select {
     font: inherit;
 }
 
-.modal {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    left: 0;
-    z-index: 1050;
-    opacity: 0;
-    -webkit-transition: opacity 600ms ease-in;
-    -moz-transition: opacity 600ms ease-in;
-    transition: opacity 600ms ease-in;
-    pointer-events: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-.modal:target {
-    opacity: 1;
-    pointer-events: auto;
-    overflow-x: auto;
-    overflow-y: hidden;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-    position: relative;
-    top: 15vh;
-    left: 5vw;
-    height: 70vh;
-    width: 90vw;
-    background-color: white;
-    border-radius: 3rem;
-    outline: 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-.modal-content img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 70vh;
-}
 
 #scrollbar {
     position: fixed;
@@ -577,3 +533,32 @@ select {
 a:hover, a:focus, a:active{
 	color: #FF4515;
 }
+
+#blockscreen, #modalwindow {
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: fixed;
+      }
+      #blockscreen {
+        background: rgba(0, 0, 0, .5);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 41;
+      }
+      #modalwindow {
+        z-index: 42;
+        background: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #a1a1a1;
+        box-shadow: 0 0 10px #444;
+      }
+      #modalwindow img{
+        height: 60vh;
+        width: auto;
+      }
+      .modal{
+        display: inline-block;
+      }
