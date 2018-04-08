@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ифкуиль. Введение.</title>
+    <title>Ифкуиль. Базовая морфология.</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
   </head>
@@ -11,7 +11,7 @@
   	<a class="exit" href="../index_html/uch.html">выход</a>
   	<div id="scrollbar"><div id="scrollbar-bg"></div></div>
     <div id="content">
-      <h1><select onchange="document.location=this.options[this.selectedIndex].value">
+      <h1><select name='top' onchange="document.location=this.options[this.selectedIndex].value">
         <option value="r0.html">От автора</option>
         <option value='r1.html'>1. Введение</option>
         <option value="r2.html">2. Фонология</option>
@@ -19,70 +19,22 @@
         <option selected value='r4.html'>4. Базовая морфология</option>
         <option value='r5.html'>5. Морфология Падежа</option>
         <option value='r6.html'>6. Морфология глагола</option>
+        <option value='r7.html'>7. Дополнительная морфология глагола</option>
+        <option value='r8.html'>8. Суффиксы</option>
         </select></h1>
-      <nav data-fill-with="table-of-contents" id="toc">
-   <h3 id="contents">Содержание</h3>
-     <ol class="toc">
-      <li><a href="#r4.1"><span class="secno">4.1</span> <span class="content">Конфигурация</span></a>
-      <ol class="toc">
-      <li><a href="#r4.1.1"><span class="secno">4.1.1</span> <span class="content">[UNI] Единичная Конфигурация</span></a>
-      <li><a href="#r4.1.2"><span class="secno">4.1.2</span> <span class="content">[DPX] Двойственная Конфигурация</span></a>
-      <li><a href="#r4.1.3"><span class="secno">4.1.3</span> <span class="content">[DCT] Разрозненная Конфигурация</span></a>
-      <li><a href="#r4.1.4"><span class="secno">4.1.4</span> <span class="content">[AGG] Скученная Конфигурация</span></a>
-      <li><a href="#r4.1.5"><span class="secno">4.1.5</span> <span class="content">[SEG] Сегментная Конфигурация</span></a>
-      <li><a href="#r4.1.6"><span class="secno">4.1.6</span> <span class="content">[CPN] Компонентная Конфигурация</span></a>
-      <li><a href="#r4.1.7"><span class="secno">4.1.7</span> <span class="content">[COH] Целостная Конфигурация</span></a>
-      <li><a href="#r4.1.8"><span class="secno">4.1.8</span> <span class="content">[CST] Составная Конфигурация</span></a>
-      <li><a href="#r4.1.9"><span class="secno">4.1.9</span> <span class="content">[MLT] Разнородная Конфигурация</span></a>
-      </ol>
-      <li><a href="#r4.2"><span class="secno">4.2</span> <span class="content">Принадлежность</span></a>
-      <ol class="toc">
-      <li><a href="#r4.2.1"><span class="secno">4.2.1</span> <span class="content">[CSL] Бесцельная Принадлежность</span></a>
-      <li><a href="#r4.2.2"><span class="secno">4.2.2</span> <span class="content">[ASO] Сплоченная Принадлежность</span></a>
-      <li><a href="#r4.2.3"><span class="secno">4.2.3</span> <span class="content">[VAR] Разобщённая Принадлежность</span></a>
-      <li><a href="#r4.2.4"><span class="secno">4.2.4</span> <span class="content">[COA] Совместная Принадлежность</span></a>
-      </ol>
-      <li><a href="#r4.3"><span class="secno">4.3</span> <span class="content">Перспектива</span></a>
-      <ol class="toc">
-      <li><a href="#r4.3.1"><span class="secno">4.3.1</span> <span class="content">[M] Ограниченная Перспектива</span></a>
-      <li><a href="#r4.3.2"><span class="secno">4.3.2</span> <span class="content">[U] Неограниченная Перспектива</span></a>
-      <li><a href="#r4.3.3"><span class="secno">4.3.3</span> <span class="content">[N] Обобщающая Перспектива</span></a>
-      <li><a href="#r4.3.4"><span class="secno">4.3.4</span> <span class="content">[A] Абстрактная Перспектива</span></a>
-      </ol>
-      <li><a href="#r4.4"><span class="secno">4.4</span> <span class="content">Протяжённость</span></a>
-      <ol class="toc">
-      <li><a href="#r4.4.1"><span class="secno">4.4.1</span> <span class="content">[DEL] Полная Протяжённость</span></a>
-      <li><a href="#r4.4.2"><span class="secno">4.4.2</span> <span class="content">[PRX] Частичная Протяжённость</span></a>
-      <li><a href="#r4.4.3"><span class="secno">4.4.3</span> <span class="content">[ICP] Зарождающаяся Протяжённость</span></a>
-      <li><a href="#r4.4.4"><span class="secno">4.4.4</span> <span class="content">[TRM] Завершающаяся Протяжённость</span></a>
-      <li><a href="#r4.4.5"><span class="secno">4.4.5</span> <span class="content">[DPL] Убывающая Протяжённость</span></a>
-      <li><a href="#r4.4.6"><span class="secno">4.4.6</span> <span class="content">[GRA] Прибывающая Протяжённость</span></a>
-      </ol>
-      <li><a href="#r4.5"><span class="secno">4.5</span> <span class="content">Сущность</span></a>
-      <ol class="toc">
-      <li><a href="#r4.5.1"><span class="secno">4.5.1</span> <span class="content">[NRM] Реальная и [RPV] Воображаемая Сущности</span></a>
-      <li><a href="#r4.5.2"><span class="secno">4.5.2</span> <span class="content">Примеры использования Сущности</span></a>
-      <li><a href="#r4.5.3"><span class="secno">4.5.3</span> <span class="content">Таблицы аффиксов для Конфигурации, Принадлежности, Перспективы, Протяженности и Сущности</span></a>
-      </ol>
-      <li><a href="#r4.6"><span class="secno">4.6</span> <span class="content">Контекст</span></a>
-      <ol class="toc">
-      <li><a href="#r4.6.1"><span class="secno">4.6.1</span> <span class="content">[EXS] Объективный Контекст</span></a>
-      <li><a href="#r4.6.2"><span class="secno">4.6.2</span> <span class="content">[FNC] Субъективный Контекст</span></a>
-      <li><a href="#r4.6.3"><span class="secno">4.6.3</span> <span class="content">[RPS] Метафорический Контекст</span></a>
-      <li><a href="#r4.6.4"><span class="secno">4.6.4</span> <span class="content">[AMG] Собирательный Контекст</span></a>
-      </ol>
-      <li><a href="#r4.7"><span class="secno">4.7</span> <span class="content">Назначение</span></a>
-      <ol class="toc">
-      <li><a href="#r4.7.1"><span class="secno">4.7.1</span> <span class="content">[IFL] Неформальное Назначение</span></a>
-      <li><a href="#r4.7.2"><span class="secno">4.7.2</span> <span class="content">[FML] Формальное Назначение</span></a>
-      <li><a href="#r4.7.3"><span class="secno">4.7.3</span> <span class="content">Примеры использования Назначения</span></a>
-      </ol>
-      <li><a href="#r4.8"><span class="secno">4.8</span> <span class="content">О морфо-фонологическом соглашении</span></a>
-       </ol>
+      <nav>
+     <a href="#r4.1">4.1. Конфигурация</a><br>
+     <a href="#r4.2">4.2. Принадлежность</a><br>
+     <a href="#r4.3">4.3. Перспектива</a><br>
+     <a href="#r4.4">4.4. Протяжённость</a><br>
+     <a href="#r4.5">4.5. Сущность</a><br>
+     <a href="#r4.6">4.6. Контекст</a><br>
+     <a href="#r4.7">4.7. Назначение</a><br>
+     <a href="#r4.8">4.8. О морфо-фонологическом соглашении</a><br>
   </nav>
 <p>Как уже описывалось в разделе 3.4.1., обычное для большинства языков различие между существительными и глаголами в Ифкуиле достаточно размыто. Все лексические основы функционируют в точности как существительные или глаголы и обладают множеством тех же морфо-семантических особенностей и категорий. Это из-за того, что морфо-семантика Ифкуиля не видит существительные и глаголы как отличающиеся точки зрения познания, но как скорее целостные проявления идей, существующих в привычном семантическом континууме, лежащем в основе, чьими компонентами являются время и пространство. Эквиваленты для существительных и глаголов в большинстве языков - это лишь "материализованные"(или осуществленные) и "активизированные"(или оглаголенные) формы семантических формативов. Несмотря на это, ради простоты мы будем называть именные формативы существительными, а глагольные - глаголами, в процессе обсуждения их морфологии.</p>
 <p>Все формативы Ифкуиля, вне зависимости от их функций, изменяются по девяти <b>Конфигурациям</b>, четырем <b>Принадлежностям</b>, четырем <b>Перспективам</b>, шести <b>Протяженностям</b>, двум <b>Сущностям</b>, четырем <b>Контекстам</b> и двум <b>Назначениям</b>, а также может обладать любым из примерно 1800 необязательных суффиксов. Все эти морфологические категории разъясняются в разделах ниже.</p>
-<a href="#toc"><h2 id="r4.1">4.1. Конфигурация</h2></a>
+<a href="#top"><h2 id="r4.1">4.1. Конфигурация</h2></a>
 <p>Чтобы понять концепцию Ифкуиля в плане подсчета и количественного анализа существительных(то есть того, что в других языках называется единственным, множественным и т.д. числами), стоит проанализировать три отдельные, но связанные между собой грамматические категории под названиями Конфигурация, Принадлежность и Перспектива. Эти концепции чужды другим языкам. В то время, как последние имеют отношение к семантическим различиям, количественным по природе, эти различия обычно возникают на лексическом уровне(то есть, при выборе слов), а не на морфологическом, как в Ифкуиле. В этом разделе мы сначала обсудим Конфигурацию, после этого, в разделе 4.2, Принадлежность, и в разделе 4.3 - Перспективу.</p>
 <p>Конфигурация в особенности имеет отношение к физическому сходству или отношению между членами объекта, обозначенного существительным в пределах групп, коллекций, наборов, ассортиментов, конструкций или зависящих от контекта целостных форм, как это продиктовано внутренней композицией, отделимостью, пространственным разделением, физическим сходством или структурой элементов. Это лучше всего может быть объяснено и проиллюстрировано посредством аналогий с конкретными наборами русских слов.</p>
 <p>Рассмотрим слово "дерево". В русском языке дерево может стоять в одиночестве или может быть частью группы деревьев. Такая группа может быть может быть просто двумя деревьями или больше, рассматривающимися как категория множественного числа на основании только лишь числа этих деревьев, будь их два, три или двадцать. Несмотря на это, в природе деревья существуют в более подходящих по контексту группах, чем просто численных. Например, деревья могут быть похожих пород, как в "роще". Группа может быть набором из разных видов, как в "лесу", или появляться в неконтролируемом беспорядке, как в "джунглях".</p>
@@ -127,60 +79,60 @@
 <td><b>[ударение]</b></td>
 </tr>
 <tr>
-<td>Phase + Sanction (+ Illocution)</td>
-<td>Valence</td>
-<td>Validation ИЛИ Aspect(+Mood)</td>
-<td>Вариант + Основа + Function</td>
-<td>Присоединенный корень ИЛИ Phase + Sanction(+ Illocution)</td>
-<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Valence</td>
+<td>Продолжительность + Утверждение (+ Иллокуция)</td>
+<td>Валентность</td>
+<td>Обоснование ИЛИ ВИд(+Наклонение)</td>
+<td>Вариант + Основа + Функция</td>
+<td>Присоединенный корень ИЛИ Продолжительность + Утверждение(+ Иллокуция)</td>
+<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Валентность</td>
 <td>Корень</td>
 <td>Падеж</td>
-<td>Illocution + Mood</td>
+<td>Иллокуция + Наклонение</td>
 <td class="highlighted">Сущность + Протяженность + Перспектива + <b>Конфигурация</b> + Принадлежность</td>
 <td>Словообраз. суффикс</td>
 <td>Контекст + Формат</td>
-<td>Bias</td>
-<td>Version</td>
-<td>Назначение + Relation</td>
+<td>Отношение</td>
+<td>Исполнение</td>
+<td>Назначение + Связь</td>
 </tr>
 </table>
 <p>Действительные значения этих аффиксов <b>Ca</b> показаны ниже в Таблице 5, в разделе 4.5.3, следуя за объяснением Сущности.</p>
 <p>Девять Конфигураций называются Единичная, Двойственная, Разрозненная, Скученная, Сегментная, Компонентная, Целостная, Составная и Разнородная. Функция и морфология этих категорий объясняется ниже вместе с примерами различных Конфигураций, примененных к четырем различным основам: <b>apʰ</b>-, <b>eq</b>-, <b>el</b>- и <b>up&scaron;&aacute;</b>-.</p>
-<a href="#toc"><h3 id="r4.1.1">4.1.1. [UNI] Единичная Конфигурация</h3></a>
+<a href="#top"><h3>4.1.1. [UNI] Единичная Конфигурация</h3></a>
 <p>Единичная Конфигурация показывает единичное, контекстное воплощение концепции основы, то есть, одну цельную контекстную единицу основной именной основы, например, "дерево", "человек", "отвертка", "виноград", "удар", "яма". В случае глаголов Единичная Конфигурация показывает единичное, целостное действие, состояние или событие, например, "быть деревом", "стать человеком", "использовать отвертку", "съесть виноград", "ударить(один раз) молотком", "вырыть яму". </p>
 <p>Примеры:</p>
 <table class="center">
 <tr>
 <td>
 <div class="modal" id="img12" onclick="modalWindow.show(document.getElementById('img12').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00012.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00012.PNG" class="small_imgs"></div><br>
 <b>pʰal</b> - "дерево"
 </td>
 <td>
 <div class="modal" id="img13" onclick="modalWindow.show(document.getElementById('img13').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00013.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00013.PNG" class="small_imgs"></div><br>
 <b>eqal</b> - "человек"
 </td>
 <td rowspan="2">
 <div class="modal" id="img14" onclick="modalWindow.show(document.getElementById('img14').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00014.PNG" class="medium_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00014.PNG" class="medium_imgs"></div>
 </td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img15" onclick="modalWindow.show(document.getElementById('img15').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00015.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00015.PNG" class="small_imgs"></div><br>
 <b>elal</b> - "высказывание"
 </td>
 <td>
 <div class="modal" id="img16" onclick="modalWindow.show(document.getElementById('img16').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00016.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00016.PNG" class="small_imgs"></div><br>
 <b>up&scaron;&aacute;l</b> - "случай"
 </td>
 </tr>
 </table>
 <p>Набор аффиксов, которые обозначают эту конфигурацию, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h3 id="r4.1.2">4.1.2. [DPX] Двойственная Конфигурация</h3></a>
+<a href="#top"><h3>4.1.2. [DPX] Двойственная Конфигурация</h3></a>
 <p>Двойственная Конфигурация показывает связанный двоичный набор. Хотя часто она относится к частям тела, например, глазам, ушам, лёгким, крыльям и т.д., она также может быть использована для описания двух идентичных или дополняющих друг друга объектов или сущностей, например, "пара ваз", "двухтомник", "набор подпорок для книг", "взаимные оппоненты". Так, в Ифкуиле слово со значением "супруг", обладающее Двойственное Конфигурацией, переводится как "муж и жена" или "супружеская пара".</p>
 <p>Один контекст, в котором Двойственная Конфигурация появляется и для существительных, и для глаголов, существует с событиями, которые содержат в себе две дополняющие друг друга "половины", проиллюстрированные словами "прыжок", "вспышка", "дуга", "взмах", "качание", "стежок", "дыхание", в общем, любым понятием, влекущим за собой идею двойственного состояния, как в "вниз/вверх", "туда/обратно", "вперед/назад", "внутрь/наружу", "полный/пустой" и "к (чему-то)/от (чего-то)". Использование в таком контексте Двойственной Конфигурации влечет за собой прохождение всего цикла с привлечением обоих дополняющих друг друга состояний. Например, слово для "удара молотка", обладающее Единичной Конфигурацией, означало бы единственный удар молотка, в то время, как то же самое слово с Двойственной Конфигурацией означает полный "вниз-вверх" цикл взмаха молотка, и две дополняющие друг друга "половины" действия разделяются ударом. </p>
 <p>Примеры:</p>
@@ -188,34 +140,34 @@
 <tr>
 <td>
 <div class="modal" id="img17" onclick="modalWindow.show(document.getElementById('img17').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00017.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00017.PNG" class="small_imgs"></div><br>
 <b>pʰall</b> - "пара деревьев"
 </td>
 <td>
 <div class="modal" id="img18" onclick="modalWindow.show(document.getElementById('img18').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00018.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00018.PNG" class="small_imgs"></div><br>
 <b>eqall</b> - "пара(людей)"
 </td>
 <td rowspan="2">
 <div class="modal" id="img19" onclick="modalWindow.show(document.getElementById('img19').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00019.PNG" class="medium_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00019.PNG" class="medium_imgs"></div>
 </td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img20" onclick="modalWindow.show(document.getElementById('img20').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00020.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00020.PNG" class="small_imgs"></div><br>
 <b>elall</b> - "пара слов"
 </td>
 <td>
 <div class="modal" id="img21" onclick="modalWindow.show(document.getElementById('img21').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00021.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00021.PNG" class="small_imgs"></div><br>
 <b>up&scaron;&aacute;ll</b> - "пара случаев"
 </td>
 </tr>
 </table>
 <p>Набор аффиксов, которые обозначают эту конфигурацию, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h3 id="r4.1.3">4.1.3. [DCT] Разрозненная Конфигурация</h3></a>
+<a href="#top"><h3>4.1.3. [DCT] Разрозненная Конфигурация</h3></a>
 <p>Разрозненная Конфигурация показывает группу или набор основных единиц более или менее одинаковой формы(каждый имеет одинаковый вид или физические свойства). Природа этой группы или этого набора может быть как пространственной, как в "стая чаек(летящих вместе)", так и временной(то есть чем-то периодически повторяющимся), как в "чайки, летящие друг за другом(стаей)". Дальнейшими примерами слов или словосочетаний, которые могут быть переведены с использованием Разрозненной Конфигурации, являются "роща", "набор отвёрток", "группа солдат", "куча листьев", "миска винограда", "серия ударов молотком" и "поверхность, покрытая ямами". Таким образом, слово Ифкуиля со значением "(идентичный) набор" может быть просто обладающим Разрозненной Конфигурацией словом со значением "вещь" или "объект". Учтите, что различие между тем, пространственный или временной(повторяющийся) набор ли имеется в виду, может быть создано при помощи либо суффикса DPR, -<b>&scaron;k</b>-, либо суффикса SEP, -<b>mb</b>-, уточняющих, которые из осей пространства-времени подразумеваются. Эти суффиксы анализируются в разделе 8.4.13.</p>
 <p>Для глаголов Разрозненная Конфигурация показывает единственный набор повторений, который, вне зависимости от того, пространственный ли он или временной, рассматривается как единое целостное событие. Индивидуальные действия, состояния или события, входящие в этот набор, могут быть по своей природе как Единичными, например, "шагать", "листать страницы", "иметь пятна", "рыть ямы на поверхности", так и Двойственными, например, "ударять молотком", "вращать(что-либо)", "дышать".</p>
 <p>Стоит учесть, что суффикс CNM, -<b>mt</b>-, со значением "упаковка(для чего-либо)", может быть использован вместе с Разрозненной Конфигурацией так же, как и с большей частью последующих, для того, чтобы определить конкретный тип контейнера, оболочки или транспортного средства для набора(например, мешок, ящик, банка, бутылка, стопка, груз и т.д.).</p> 
@@ -224,68 +176,68 @@
 <tr>
 <td>
 <div class="modal" id="img22" onclick="modalWindow.show(document.getElementById('img22').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00022.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00022.PNG" class="small_imgs"></div><br>
 <b>pʰatļ</b> - "роща"
 </td>
 <td>
 <div class="modal" id="img23" onclick="modalWindow.show(document.getElementById('img23').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00023.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00023.PNG" class="small_imgs"></div><br>
 <b>eqatļ</b> - "группа похожих людей"
 </td>
 <td rowspan="2">
 <div class="modal" id="img24" onclick="modalWindow.show(document.getElementById('img24').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00024.PNG" class="medium_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00024.PNG" class="medium_imgs"></div>
 </td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img25" onclick="modalWindow.show(document.getElementById('img25').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00025.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00025.PNG" class="small_imgs"></div><br>
 <b>elatļ</b> - "набор одинаковых слов"
 </td>
 <td>
 <div class="modal" id="img26" onclick="modalWindow.show(document.getElementById('img26').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00026.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00026.PNG" class="small_imgs"></div><br>
 <b>up&scaron;&aacute;tļ</b> - "набор похожих случаев"
 </td>
 </tr>
 </table>
 <p>Набор аффиксов, которые обозначают эту конфигурацию, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h3 id="r4.1.4">4.1.4. [AGG] Скученная Конфигурация</h3></a>
+<a href="#top"><h3>4.1.4. [AGG] Скученная Конфигурация</h3></a>
 <p>Скученная Конфигурация функционирует так же, как Разрозненная выше по отношению к совместно действующей группе или набору объектов, за исключением того, что члены этого набора не идентичны друг другу. Примерами слов или объектов, которые могли бы быть переведены при помощи Скученной Конфигурации, являются "лес(с разными видами деревьев)", "набор инструментов", "группа граждан", "перемешанная куча листьев", "группа различных животных", "поверхность с ямами разного размера", "ряд музыкальных нот". С глаголами Скученная Конфигурация означает, что пространственно или временно повторяющийся набор не идентичных друг другу действий, событий или состояний подразумевается как цельная единица контекста. Эта Конфигурация может быть использована, например, для перевода предложения "Этим утром я попал ямы в саду (то есть ямы разного размера)". </p>
 <p>Примеры:</p>
 <table class="center">
 <tr>
 <td>
 <div class="modal" id="img27" onclick="modalWindow.show(document.getElementById('img27').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00027.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00027.PNG" class="small_imgs"></div><br>
 <b>pʰaļ</b> - "лес"
 </td>
 <td>
 <div class="modal" id="img28" onclick="modalWindow.show(document.getElementById('img28').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00028.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00028.PNG" class="small_imgs"></div><br>
 <b>eqatļ</b> - "группа разных людей"
 </td>
 <td rowspan="2">
 <div class="modal" id="img29" onclick="modalWindow.show(document.getElementById('img29').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00029.PNG" class="medium_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00029.PNG" class="medium_imgs"></div>
 </td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img30" onclick="modalWindow.show(document.getElementById('img30').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00030.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00030.PNG" class="small_imgs"></div><br>
 <b>elaļ</b> - "набор различных слов, фраза"
 </td>
 <td>
 <div class="modal" id="img31" onclick="modalWindow.show(document.getElementById('img31').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00031.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00031.PNG" class="small_imgs"></div><br>
 <b>up&scaron;&aacute;ļ</b> - "набор различных случаев"
 </td>
 </tr>
 </table>
 <p>Набор аффиксов, которые обозначают эту конфигурацию, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h3 id="r4.1.5">4.1.5. [SEG] Сегментная Конфигурация</h3></a>
+<a href="#top"><h3>4.1.5. [SEG] Сегментная Конфигурация</h3></a>
 <p>Сегментная Конфигурация показывает группу или набор основных единиц, причем члены этого набора физически схожи или идентичны, а также находятся в физическом контакте друг с другом, физически соединены каким-то связывающим их посредником или в достаточно близком контакте друг с другом для того, чтобы группа двигалась или действовала совместно. Примерами могут быть слова "сеть", "поезд из вагонов-платформ", "колонна школьных автобусов", "нитка жемчуга", "падение листьев", "линия танцующих", "процессия кукол Барби" (например, выходящих из конвейера). Чтобы проиллюстрировать различие между этой Конфигурацией и Разрозненной Конфигурацией, описанной выше, мы увидели, что слово &laquo;виноград&raquo; в Разрозненной Конфигурации переводилось бы как &laquo;порция виноградин&raquo;, в то время как в Сегментной Конфигурации оно означало бы &laquo;гроздь виноградин&raquo; (т.е. все ещё соединенные друг с другом на части виноградной лозы).</p>
 <p>С глаголами, использование Сегментной Конфигурации вместо Собирательной Конфигурации подразумевает, что повторяемая природа действия, состояния, или события естественно происходит благодаря контекстуальной природе самого события или агента события. Поэтому она использовалась бы для различения &laquo;очереди пуль из пулемета&raquo; от &laquo;простых выстрелов из оружия, стреляющего одиночными&raquo;. Также, она отличала бы &laquo;свет мерцает&raquo; от &laquo;свет вспыхивает&raquo;, где &laquo;мерцает&raquo; подразумевает способ, которым источник естественно испускает свет, в то время как &laquo;вспыхивать&raquo; подразумевает, что свет заставлен испускать повторяемые вспышки света. </p>
 <p>Примеры:</p>
@@ -293,68 +245,68 @@
 <tr>
 <td>
 <div class="modal" id="img32" onclick="modalWindow.show(document.getElementById('img32').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00032.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00032.PNG" class="small_imgs"></div><br>
 <b>pʰaļļ</b> - "древостой, линия деревьев"
 </td>
 <td>
 <div class="modal" id="img33" onclick="modalWindow.show(document.getElementById('img33').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00033.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00033.PNG" class="small_imgs"></div><br>
 <b>eqatļļ</b> - "линия/стена одинаковых людей"(например, плечом к плечу или держащихся за руки)
 </td>
 <td rowspan="2">
 <div class="modal" id="img34" onclick="modalWindow.show(document.getElementById('img34').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00034.PNG" class="medium_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00034.PNG" class="medium_imgs"></div>
 </td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img35" onclick="modalWindow.show(document.getElementById('img35').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00035.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00035.PNG" class="small_imgs"></div><br>
 <b>elaļļ</b> - "строка слов"
 </td>
 <td>
 <div class="modal" id="img36" onclick="modalWindow.show(document.getElementById('img36').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00036.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00036.PNG" class="small_imgs"></div><br>
 <b>up&scaron;&aacute;ļļ</b> - "цепь похожих случаев"
 </td>
 </tr>
 </table>
 <p>Набор аффиксов, которые обозначают эту конфигурацию, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h3 id="r4.1.6">4.1.6. [CPN] Компонентная Конфигурация</h3></a>
+<a href="#top"><h3>4.1.6. [CPN] Компонентная Конфигурация</h3></a>
 <p>Компонентная Конфигурация действует аналогично Сегментной Конфигурации, за исключением того, что отдельные члены конфигурационного набора не являются физически подобными или идентичными друг другу. Примеры слов/сущностей, которые переводились бы с использованием Компонентной Конфигурации, - это "грузовой поезд", "падение (смешанных) фруктов" (т.е. непрерывный поток падающих фруктов), "очередь владельцев билетов", "процессия плотов", "стиль музыкальных нот". С глаголами Компонентная Конфигурация означает связанную серию повторений, где отдельные действия, события или состояния, входящие в состав повторяемого набора, не являются идентичными. Она отличала бы &laquo;Свет мелькал&raquo; от &laquo;Свет мерцал&raquo;. </p>
 <p>Примеры:</p>
 <table class="center">
 <tr>
 <td>
 <div class="modal" id="img37" onclick="modalWindow.show(document.getElementById('img37').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00037.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00037.PNG" class="small_imgs"></div><br>
 <b>pʰařļ</b> - "линия различных деревьев"
 </td>
 <td>
 <div class="modal" id="img38" onclick="modalWindow.show(document.getElementById('img38').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00038.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00038.PNG" class="small_imgs"></div><br>
 <b>eqatřļ</b> - "линия/стена различных людей"(например, плечом к плечу или держащихся за руки)
 </td>
 <td rowspan="2">
 <div class="modal" id="img39" onclick="modalWindow.show(document.getElementById('img39').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00039.PNG" class="medium_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00039.PNG" class="medium_imgs"></div>
 </td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img40" onclick="modalWindow.show(document.getElementById('img40').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00040.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00040.PNG" class="small_imgs"></div><br>
 <b>elařļ</b> - "строка различных слов"
 </td>
 <td>
 <div class="modal" id="img41" onclick="modalWindow.show(document.getElementById('img41').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00041.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00041.PNG" class="small_imgs"></div><br>
 <b>up&scaron;&aacute;řļ</b> - "цепь различных случаев"
 </td>
 </tr>
 </table>
 <p>Набор аффиксов, которые обозначают эту конфигурацию, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h3 id="r4.1.7">4.1.7. [COH] Целостная Конфигурация</h3></a>
+<a href="#top"><h3>4.1.7. [COH] Целостная Конфигурация</h3></a>
 <p>Целостная Конфигурация функционирует подобно Сегментной Конфигурации, за исключением того, что отдельные члены конфигурации связаны, слиты или смешаны друг с другом, чтобы сформировать когерентную (сцепленную) новую сущность, т.е. совокупная конфигурация объектов составляет полностью новую гештальт-подобную сущность. Примеры слов, которые переводились бы с использованием Целостной Конфигурации, - это "книжная полка", "фаланга", "ксилофон".</p>
 <p>В области глаголов, нахождение переводов, иллюстрирующих Целостную Конфигурацию, затруднительно. Если можно было представить глагол &laquo;сиять&raquo; как означающий серию вспышек, размытых одна в другую, чтобы создать непрерывное излучение, тогда глагол &laquo;сиять&raquo; удовлетворял этому. Возможно, лучшей иллюстрацией было бы различие между &laquo;жужжать&raquo; и &laquo;издавать набор повторяющихся шумов&raquo;.</p>
 <p>Примеры:</p>
@@ -362,68 +314,68 @@
 <tr>
 <td>
 <div class="modal" id="img42" onclick="modalWindow.show(document.getElementById('img42').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00042.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00042.PNG" class="small_imgs"></div><br>
 <b>pʰask</b> - "спутанная роща деревьев"(то есть их ветви/корни переплетены и выросли вместе)
 </td>
 <td>
 <div class="modal" id="img43" onclick="modalWindow.show(document.getElementById('img43').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00043.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00043.PNG" class="small_imgs"></div><br>
 <b>eqatsk</b> - "подразделение/сосредоточение похожих людей"
 </td>
 <td rowspan="2">
 <div class="modal" id="img44" onclick="modalWindow.show(document.getElementById('img44').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00044.PNG" class="medium_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00044.PNG" class="medium_imgs"></div>
 </td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img45" onclick="modalWindow.show(document.getElementById('img45').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00045.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00045.PNG" class="small_imgs"></div><br>
 <b>elask </b>- "речь, созданная из похожих слов"
 </td>
 <td>
 <div class="modal" id="img46" onclick="modalWindow.show(document.getElementById('img46').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00046.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00046.PNG" class="small_imgs"></div><br>
 <b>up&scaron;&aacute;sk</b> - "сеть похожих случаев"
 </td>
 </tr>
 </table>
 <p>Набор аффиксов, которые обозначают эту конфигурацию, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h3 id="r4.1.8">4.1.8. [CST] Составная Конфигурация</h3></a>
+<a href="#top"><h3>4.1.8. [CST] Составная Конфигурация</h3></a>
 <p>Составная Конфигурация действует так же, как Целостная Конфигурация, за исключением того, что отдельные члены конфигурационного набора не являются идентичными или физически подобными друг другу. Примеры слов/концепций, которые переводились бы с использованием Составной Конфигурацией, - это "здание"(строительный набор стен, полов, дверей, окон и т.п.), "массив связи", "конспирация", "заросли джунглей". Таким образом слова Ифкуиль для "рецепт", "скелет", "мелодия&raquo; были бы просто словами для "ингредиент", "кость", и "музыкальная нота", склоняемыми в Составной Конфигурации. Для глаголов, отличие Составной Конфигурации и Целостной Конфигурации различало бы &laquo;урчать&raquo; от &laquo;гудеть&raquo; или &laquo;блестеть&raquo; от &laquo;сиять&raquo;. </p>
 <p>Примеры:</p>
 <table class="center">
 <tr>
 <td>
 <div class="modal" id="img47" onclick="modalWindow.show(document.getElementById('img47').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00047.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00047.PNG" class="small_imgs"></div><br>
 <b>pʰa&scaron;k</b> - "джунгли"
 </td>
 <td>
 <div class="modal" id="img48" onclick="modalWindow.show(document.getElementById('img48').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00048.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00048.PNG" class="small_imgs"></div><br>
 <b>eqat&scaron;k</b> - "подразделение/сосредоточение различных людей"
 </td>
 <td rowspan="2">
 <div class="modal" id="img49" onclick="modalWindow.show(document.getElementById('img49').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00049.PNG" class="medium_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00049.PNG" class="medium_imgs"></div>
 </td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img50" onclick="modalWindow.show(document.getElementById('img50').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00050.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00050.PNG" class="small_imgs"></div><br>
 <b>ela&scaron;k </b>- "речь"
 </td>
 <td>
 <div class="modal" id="img51" onclick="modalWindow.show(document.getElementById('img51').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00051.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00051.PNG" class="small_imgs"></div><br>
 <b>up&scaron;&aacute;&scaron;k</b> - "ситуация(включающая в себя некоторое число случаев"
 </td>
 </tr>
 </table>
 <p>Набор аффиксов, которые обозначают эту конфигурацию, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h3 id="r4.1.9">4.1.9. [MLT] Разнородная Конфигурация</h3></a>
+<a href="#top"><h3>4.1.9. [MLT] Разнородная Конфигурация</h3></a>
 <p>Разнородная Конфигурация является самой трудной для объяснения, так как не имеет западного лингвистического эквивалента. Разнородная Конфигурация служит для отождествления существительного как индивидуального члена &laquo;нечеткого&raquo; множества. Нечеткое множество &ndash; это термин, который возникает в нетрадиционной логике, описывающий множество, чьи отдельные члены не все разделяют одни и те же определяющие множество атрибуты в той же степени, т.е. в то время как может быть один или более архетипных членов множества, которые показывают определяющие атрибуты исключительно и точно, другие члены множества могут разнится с этой архетипной нормой в широком диапазоне степеней, в физическом сходстве ли, степени силы сцепления или и в том и другом. В самом деле, некоторые члены множества могут показывать очень малое сходство с архетипом и быть ближе к архетипу другого нечеткого множества, т.е. нечеткие множества допускают идею о &laquo;градиентном перекрытии&raquo; между членами разных множеств.</p>
 <p>Трудно точно перевести без прибегания к парафразу тех видов концепций, которые Ифкуиль легко выражает использованием Разнородной Конфигурации. Например, ифкуильское слово для &laquo;дерево&raquo;, склоняемое в Разнородной Конфигурации, означало бы нечто вроде &laquo;группа того, что по-видимому является деревьями&raquo;, или еще лучше &laquo;группа дерево-подобных объектов&raquo; (т.е. что-то, являющееся деревьями, и другое выглядящим менее похожим на деревья). По существу, любое множество сущностей, чье сходство членства меняется в разной степени по сравнению с архетипным членом множества, может быть выражено с использованием Разнородной Конфигурации. Например, ифкуильское слово для &laquo;библиотеки&raquo; было бы просто словом вроде &laquo;произведение&raquo; (т.е. написанное автором/сочиненное), склоняемое в Разнородной Конфигурации, означающее смесь ассортимента произведений и сочинений (например, включая книги, памфлеты, записные книжки, гроссбухи, лозунги, письма, дневники, записи, журналы, и т.п.). Другим примером концепций, переводимым с использованием Разнородной Конфигурации, являлось бы &laquo;группа людей, сброд, беспорядочный рисунок, жизнь в постоянном движении &raquo;.</p>
 <p>С глаголами Разнородная Конфигурация подразумевает отдельные повторения, входящие в состав действия, состояния или события, имеют различные степени пространство временного сходства друг с другом. Несколько глаголов, такие как &laquo;колыхаться, трещать, дрожать&raquo;, схватывают этот смысл. </p>
@@ -432,34 +384,34 @@
 <tr>
 <td>
 <div class="modal" id="img52" onclick="modalWindow.show(document.getElementById('img52').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00052.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00052.PNG" class="small_imgs"></div><br>
 <b>pʰakţ</b> - "заросли, чаща"
 </td>
 <td>
 <div class="modal" id="img53" onclick="modalWindow.show(document.getElementById('img53').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00053.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00053.PNG" class="small_imgs"></div><br>
 <b>eqatkţ</b> - "разнородная группа людей"
 </td>
 <td rowspan="2">
 <div class="modal" id="img54" onclick="modalWindow.show(document.getElementById('img54').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00054.PNG" class="medium_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00054.PNG" class="medium_imgs"></div>
 </td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img55" onclick="modalWindow.show(document.getElementById('img55').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00055.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00055.PNG" class="small_imgs"></div><br>
 <b>elakţ </b>- "бессвязная речь, бессвязно говорить"
 </td>
 <td>
 <div class="modal" id="img56" onclick="modalWindow.show(document.getElementById('img56').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00056.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00056.PNG" class="small_imgs"></div><br>
 <b>up&scaron;&aacute;kţ</b> - "хаос, хаотичная ситуация"
 </td>
 </tr>
 </table>
 <p>Набор аффиксов, которые обозначают эту конфигурацию, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h2 id="r4.2">4.2. Принадлежность</h2></a>
+<a href="#top"><h2 id="r4.2">4.2. Принадлежность</h2></a>
 <p>В то время, как категория Конфигурации из предыдущего раздела различает взаимоотношения между отдельными членами множества в терминах физических характеристик, физических атрибутов или физических связей, категория Принадлежности действует подобным образом, чтобы отличать членов взаимоотношений в терминах субъективной цели, функции или выгоды. Принадлежность действует взаимоусиливающе в соединении с Конфигурации при описании совокупного контекстуального взаимоотношения между членами множества. Подобно Конфигурации, значения существительных и глаголов в различных Принадлежностях часто подразумевают лексические изменения при переводе с Ифкуиля.</p>
 <p>Возвращаясь к нашему раннему примеру слова &laquo;дерево&raquo;, мы увидели, как группа деревьев одной породы становится &laquo;рощей&raquo; в Разрозненной Конфигурации. Слово &laquo;роща&raquo; подразумевает, что деревья выросли естественным образом, без особой цели или функции относительно человеческого замысла или использования. С другой стороны, рощи деревьев могут быть посажены по плану, в таком случае они становятся &laquo;фруктовым садом&raquo;. Мы увидели, как деревья, встречаемые как естественный ассортимент деревьев различного вида, обозначаются как &laquo;лес&raquo;. Однако, такие ассортименты могут стать полностью хаотичными, демонстрирующими хаотический беспорядок с точки зрения субъективного человеческого замысла, таким образом, становясь &laquo;джунглями&raquo;.</p>
 <p>Как другой пример, мы увидели, как слово &laquo;человек&raquo; становится &laquo;группой&raquo;, или &laquo;сборищем&raquo;, которые оба являются нейтральными относительно субъективной цели или функции. Однако, приложение смысла преднамеренного замысла порождает такие слова, как &laquo;команда&raquo;, в то время как отсутствие цели имеет результатом &laquo;толпу&raquo;.</p>
@@ -500,43 +452,43 @@
 <td><b>[ударение]</b></td>
 </tr>
 <tr>
-<td>Phase + Sanction (+ Illocution)</td>
-<td>Valence</td>
-<td>Validation ИЛИ Aspect(+Mood)</td>
-<td>Вариант + Основа + Function</td>
-<td>Присоединенный корень ИЛИ Phase + Sanction(+ Illocution)</td>
-<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Valence</td>
+<td>Продолжительность + Утверждение (+ Иллокуция)</td>
+<td>Валентность</td>
+<td>Обоснование ИЛИ ВИд(+Наклонение)</td>
+<td>Вариант + Основа + Функция</td>
+<td>Присоединенный корень ИЛИ Продолжительность + Утверждение(+ Иллокуция)</td>
+<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Валентность</td>
 <td>Корень</td>
 <td>Падеж</td>
-<td>Illocution + Mood</td>
+<td>Иллокуция + Наклонение</td>
 <td class="highlighted">Сущность + Протяженность + Перспектива + Конфигурация + <b>Принадлежность</b></td>
 <td>Словообраз. суффикс</td>
 <td>Контекст + Формат</td>
-<td>Bias</td>
-<td>Version</td>
-<td>Назначение + Relation</td>
+<td>Отношение</td>
+<td>Исполнение</td>
+<td>Назначение + Связь</td>
 </tr>
 </table>
 <p>Действительные значения этих аффиксов <b>Ca</b> показаны ниже, в таблице 5 раздела 4.5.3, сразу за объяснением Сущности. Детально четыре Принадлежности разъяснены ниже.</p>
-<a href="#toc"><h3 id="r4.2.1">4.2.1. [CSL] Бесцельная Принадлежность</h3></a>
+<a href="#top"><h3>4.2.1. [CSL] Бесцельная Принадлежность</h3></a>
 <p>Бесцельная Принадлежность показывает, что отдельные члены конфигурационного набора являются естественно произошедшими, где функция, состояние, цель или выгода отдельных членов неприменима, неуместна, а если применима, то распределена между всем членами конфигурационного набора. Бесцельная Принадлежность отличается от Сплоченной, описываемой ниже, в том, что роль индивидуальных членов набора не является субъективно определенной человеческим замыслом. Примеры &ndash; это &laquo;ветви деревьев, роща, насыпь камней, несколько людей, облака&raquo;.</p>
 <p>Бесцельная Принадлежность также обычно применяется к существительным в Единичной Конфигурации при нейтральном разговоре об этих существительных, так как существительное в Единичной Конфигурации означает одну единственную сущность без ссылки на набор, следовательно концепция &laquo;разделяемой&raquo; функции была бы неприменима. Примеры: &laquo;человек, дверь, чувство жары, лист дерева&raquo;. С глаголами Бесцельная Принадлежность подразумевала бы, что действие, состояние или событие происходит естественным образом, или является нейтральным относительно цели или замысла.</p>
 <p>Набор аффиксов, которые обозначают эту Принадлежность, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h3 id="r4.2.2">4.2.2. [ASO] Сплоченная Принадлежность</h3></a>
+<a href="#top"><h3>4.2.2. [ASO] Сплоченная Принадлежность</h3></a>
 <p>Сплоченная Принадлежность показывает, что отдельные члены конфигурационного набора имеют одну и ту же субъективную функцию, состояние, цель или выгоду. Его использование иллюстрируется при помощи слова для Разрозненной Конфигурации путем сравнения его переводов при склонении в Бесцельной Принадлежности (=группа солдат) и Сплоченной Принадлежности (=отряд, взвод). Именно это различение между Бесцельной и Сплоченной Принадлежностями, различало бы, в противном случае эквивалентные, склонения в Разрозненной Конфигурации слова &laquo;дерево&raquo; путем перевода их, соответственно, как &laquo;роща&raquo; и &laquo;фруктовый сад&raquo;.</p>
 <p>Сплоченная Принадлежность также может быть использована с существительными в Единичной Конфигурации, чтобы обозначить смысл единства среди его характеристик, целей, мыслей и т.п. Например, слово &laquo;человек&raquo;, склоняемое в Единичной Конфигурации и Сплоченной Принадлежности, переводилось бы как &laquo;целеустремленный человек&raquo;. Даже такие существительные как &laquo;камень, дерево или произведение искусства&raquo; может быть склоняемым подобным образом, субъективно переводимым как &laquo;хорошо сформированный камень, целостное дерево, гармоничное произведение искусства&raquo;.</p>
 <p>С глаголами Сплоченная Принадлежность означает, что действие, состояние или событие происходит по замыслу или с определенной целью. Различение Бесцельной и Сплоченной Принадлежностей могло бы использоваться, например, с глаголом &laquo;повернуться&raquo; в &laquo;Я повернулся к окну&raquo;, чтобы показать было ли это без определенной цели, либо вследствие желания выглянуть наружу.</p>
 <p>Набор аффиксов, которые обозначают эту Принадлежность, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h3 id="r4.2.3">4.2.3. [VAR] Разобщённая Конфигурация</h3></a>
+<a href="#top"><h3>4.2.3. [VAR] Разобщённая Конфигурация</h3></a>
 <p>Разобщенная Принадлежность показывает, что отдельные члены конфигурационного набора отличаются относительно субъективной функции, состояния, цели, или выгоды. Различия среди членов могут быть разнообразной степени (т.е. составляя нечеткое множество в отношении функции, цели и т.п.) или полностью не соответствовать друг другу, хотя нужно заметить, что Разобщенная Принадлежность не было бы использована для обозначения противоположных, но комплементарных различий между членами множества (смотри Совместную Принадлежность ниже). Таким образом, она использовалась бы для обозначения &laquo;куча инструментов, обрезки, случайное собрание, сброд, дисфункциональная пара, какофония звуков, беспорядок книг, собрание в беспорядке&raquo;. Оно действует с существительными в Единичной Конфигурации для отображения таких значений как &laquo;человек, не ладящий сам с собой, плохо сформированный камень, хаотическое произведение искусства, ситуация то левой, то правой руки (в фильмах)&raquo;.</p>
 <p>С глаголами Разобщенная Принадлежность показывает действие, состояние или событие, которое происходит из-за более чем одной причины или цели, и что эти цели или причины более или менее несвязанны. Этот смысл может возможно быть схвачен при переводе только с помощью парафраза, как в &laquo;Она купила дом по различным причинам&raquo; или &laquo;Мое присутствие на вечеринке служит нескольким целям&raquo;. С не Единичной Конфигурацией использование Разобщенной Принадлежности может описывать довольно сложные феномены; например, предложение, использующее Сегментную Конфигурацию как в &laquo;Свет мерцал&raquo; в соединении с Разобщенной Принадлежностью, означало бы, что каждое мерцание света сигнализирует нечто отличное от предшествующего или последующего мерцаний.</p>
 <p>Набор аффиксов, которые обозначают эту Принадлежность, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h3 id="r4.2.4">4.2.4. [COA] Совместная Принадлежность</h3></a>
+<a href="#top"><h3>4.2.4. [COA] Совместная Принадлежность</h3></a>
 <p>Совместная Принадлежность показывает, что члены конфигурационного набора учавствуют в комплементарном взаимоотношении по отношению к их индивидуальным функциям, состояниям, целям, выгодам, и т.п. Это означает, что в то время как функция каждого члена является отличной от функций других членов, каждый член служит поддержкой некоторой более объединенной роли. Например, слово, переводимое как &laquo;набор инструментов&raquo;, было бы словом &laquo;инструмент&raquo; в Скученной Конфигурации (благодаря физическому различию каждого инструмента), а в Совместной Принадлежности для указания, что каждый инструмент имеет различную, но комплементарную функцию в помощи при конструировании или починке. Другим примером было бы слово для &laquo;палец&raquo;, склоняемое в Сегментной Конфигурации и Совместной Принадлежности, переводимое как &laquo;пальцы на одной руке&raquo; (обратитет внимание на использование Сегментной Конфигурации для обозначения физической связи между пальцами посредством руки). Добавочным примером было бы использование Совместной Принадлежности со словом для &laquo;кусок пищи&raquo;, чтобы обозначить &laquo;хорошо сбалансированная еда&raquo;.</p>
 <p>Совместная Принадлежность по своей природе появляется наиболее часто в соединении с Двойственной Конфигурацией, так как бинарные наборы имеют склонность быть дополняющими друг друга. Оно используется, например, для обозначения такие симметричных бинарных наборов, как части тела, обычно показывая различия зеркального отображения левой/правой сторон, например, &laquo;чьи-то уши, чьи-то руки, пара крыльев&raquo;. Пары, которые обычно не различают такое комплементарное различие (например, чьи-то глаза) могут, тем не менее, по выбору помещены в Совместную Принадлежность, чтобы подчеркнуть двустороннюю симметрию (например, чьи-то левый и правый глаза, действующие вместе).</p>
 <p>С глаголами Совместная Принадлежность означает родственную, взаимоусиливающую природу составных действий, состояний и событий, которые создают более большее холистическое действие, состояние или событие. Она навязывает ситуационную структуру к действию, состоянию или событию, где отдельные обстоятельства работают вместе в комплементарной манере, чтобы входить в состав совокупной ситуации. Она использовалась бы, например, чтобы отличить предложения &laquo;Он путешествовал по Юкону&raquo; и &laquo;Он рисковал на Юконе&raquo; или &laquo;У меня возник план&raquo; и &laquo;Я сформировал план&raquo;.</p>
 <p>Набор аффиксов, которые обозначают эту Принадлежность, показан в Таблице 5 ниже, в разделе 4.5.3.</p>
-<a href="#toc"><h2 id="r4.3">4.3. Перспектива</h2></a>
+<a href="#top"><h2 id="r4.3">4.3. Перспектива</h2></a>
 <p>Перспектива является самой близкой морфологической категорией Ифкуиль к категориям Число и Время других языков (например, единственный/множественный и прошлое/настоящее/будущее). Однако, это соответствие является только приблизительным, потому что Перспектива не адресует конкретно то количество, до которого значение форматива задается внутри заданного контекста, ни когда оно происходит по отношению к настоящему, а скорее манеру, в которой оно пространственно-временно выражается. В частности, Перспектива показывает должно ли существительное или глагол отождествляться как</p>
 <ol>
 <li>
@@ -592,25 +544,25 @@
 <td><b>[ударение]</b></td>
 </tr>
 <tr>
-<td>Phase + Sanction (+ Illocution)</td>
-<td>Valence</td>
-<td>Validation ИЛИ Aspect(+Mood)</td>
-<td>Вариант + Основа + Function</td>
-<td>Присоединенный корень ИЛИ Phase + Sanction(+ Illocution)</td>
-<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Valence</td>
+<td>Продолжительность + Утверждение (+ Иллокуция)</td>
+<td>Валентность</td>
+<td>Обоснование ИЛИ ВИд(+Наклонение)</td>
+<td>Вариант + Основа + Функция</td>
+<td>Присоединенный корень ИЛИ Продолжительность + Утверждение(+ Иллокуция)</td>
+<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Валентность</td>
 <td>Корень</td>
 <td>Падеж</td>
-<td>Illocution + Mood</td>
+<td>Иллокуция + Наклонение</td>
 <td class="highlighted">Сущность + Протяженность + <b>Перспектива</b> + Конфигурация + Принадлежность</td>
 <td>Словообраз. суффикс</td>
 <td>Контекст + Формат</td>
-<td>Bias</td>
-<td>Version</td>
-<td>Назначение + Relation</td>
+<td>Отношение</td>
+<td>Исполнение</td>
+<td>Назначение + Связь</td>
 </tr>
 </table>
 <p>Действительные значения этих аффиксов <b>Ca</b> показаны ниже в Таблице 5, в разделе 4.5.3, следуя за объяснением Сущности. Значение и использование каждой конкретной Перспективы объясняется ниже.</p>
-<a href="#toc"><h3 id="r4.3.1">4.3.1. [M] Ограниченная Перспектива</h3></a>
+<a href="#top"><h3>4.3.1. [M] Ограниченная Перспектива</h3></a>
 <p>Ограниченная Перспектива означает ограниченную реализацию частной конфигурации. Под &laquo;ограниченной реализацией&raquo; понимается контекстуальная сущность, которая, хотя возможно многочисленна в количестве или структурно многогранна, или развернута сквозь отрезок времени, тем не менее, контекстуально рассматриваема и признаваема как &laquo;монада&raquo;, единственное, объединенное целое, воспринимаемое как существующее в пределах буквальной или фигуральной психологически непрерывной границы. Это важно, так как конфигурации, отличные от Одиночной Конфигурации, технически подразумевают более чем одну отдельную настоящую или имеющий место сущность/случай. Для существительных эта граница является физически непрерывной, подобно контейнеру, соответствующую &laquo;поверхности&raquo; объекта (буквально или психологически). Для глаголов эта граница является психологически временной, в частности, &laquo;настоящей&raquo; (о чем в Ифкуиль лучше думать как о &laquo;контексте под рукой&raquo; или &laquo;непосредственно доступном контексте&raquo;). Это различение относительно того, как &laquo;ограниченная реализация&raquo; интерпретируется для существительных и глаголов, является подходящим, исходя из того, что Ифкуиль рассматривает существительные как пространственно материализованные концепции, в то же время, рассматривая глаголы как их временно &laquo;активизированное&raquo; дополняющее (смотрите раздел 3.4.1)</p>
 <p>Таким образом, используя слово &laquo;дерево&raquo; для примера, тогда как могли бы существовать много деревьев, представленных в терминах количества, Ограниченная Перспектива подразумевает, что они формируют только одну реализацию любой проявленной частной Конфигурации. Используя Различную Конфигурацию как пример, Ограниченная Перспектива означала бы, что существует только один Различный набор деревьев, т.е. &laquo;один лес&raquo;.</p>
 <p>В этот момент нужно заметить относительно Перспективы, что Ифкуиль не делает различий между &laquo;счетными&raquo; или &laquo;неисчисляемыми&raquo; (или &laquo;вещественными&raquo;) существительными. В таких языках как английский, существительные отличаются между теми, что могут пересчитываться и образовывать множественное число (например, одно яблоко, четыре мальчика, несколько наций), и теми, что не могут пересчитываться и образовывать множественное число (например, вода, песок, пластик, воздух, смех). В Ифкуиль все существительные являются исчисляемыми, так как все существительные могут существовать как контекстуальные монады. В результате, перевод определенных существительных Ифкуиль должен часто быть &laquo;контекстуальным&raquo; нежели буквальным, применяя различные соглашения, чтобы выразить существительное в числовом и множественном контексте, например, &laquo;какая-то грязь&raquo;, &laquo;воздух здесь&raquo; или &laquo;дуновение воздуха&raquo; нежели &laquo;грязь&raquo; или &laquo;воздух&raquo;.</p>
@@ -641,7 +593,7 @@
 <tr>
 <td>
 <div class="modal" id="img57" onclick="modalWindow.show(document.getElementById('img57').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00057.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00057.PNG" class="small_imgs"></div>
 </td>
 <td>
 <b>akl&aacute;l </b>- "река; река течёт"
@@ -650,7 +602,7 @@
 <tr>
 <td>
 <div class="modal" id="img58" onclick="modalWindow.show(document.getElementById('img58').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00058.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00058.PNG" class="small_imgs"></div>
 </td>
 <td>
 <b>u&rsquo;t&rsquo;ak&rsquo;ař&scaron;</b> - "созвездие; созвездие сияет(в ночном небе)"
@@ -659,12 +611,12 @@
 <tr>
 <td>
 <div class="modal" id="img59" onclick="modalWindow.show(document.getElementById('img59').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00059.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00059.PNG" class="small_imgs"></div>
 </td>
 <td><b>vyarl </b>- "набор выгод; набор выгод в действии"</td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.3.2">4.3.2. [U] Неограниченная Перспектива</h3></a>
+<a href="#top"><h3>4.3.2. [U] Неограниченная Перспектива</h3></a>
 <p>Неограниченная Перспектива означает &laquo;неограниченную реализацию&raquo; частной конфигурационной сущности, означая, что существительное или глагол проявляют себя, как не содержащийся в пределах непрерывных границ, т.е. в контекстуально &laquo;разъединенных&raquo; проявлениях. Для существительных избегается термин &laquo;множественное&raquo;, чтобы не подразумевать, что на члены существительных ссылаются количественно сами по себе, но скорее как на не монадное (т.е. не объединенное) проявление конфигурационного набора. В то время как самым подходящим перевод было бы использование множественного числа, например, &laquo;деревья, рощи, комки грязи&raquo;, семантически (если не морфологически) более точной передачей было бы &laquo;дерево здесь, дерево там&raquo;, &laquo;эта роща и другая и еще одна&hellip;&raquo;, &laquo;комок грязи за комком грязи за комком грязи &hellip;&raquo;.</p>
 <p>Для глаголов &laquo;неограниченная реализация&raquo; означает, что психологические временные границы действия, состояния или события не доступны из контекста настоящего времени. Это применялось бы к действию, состоянию или событию, которые:</p>
 <ul>
@@ -691,7 +643,7 @@
 <tr>
 <td>
 <div class="modal" id="img60" onclick="modalWindow.show(document.getElementById('img60').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00060.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00060.PNG" class="small_imgs"></div>
 </td>
 <td>
 <b>akl&aacute;t </b>- "то, что однажды было рекой; река однажды текла(и больше этого не делает)"
@@ -700,71 +652,71 @@
 <tr>
 <td>
 <div class="modal" id="img61" onclick="modalWindow.show(document.getElementById('img61').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00061.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00061.PNG" class="small_imgs"></div>
 </td>
 <td><b>u&rsquo;t&rsquo;ak&rsquo;ařg</b> - "погасшее созвездие; созвездие однажды сияло(и больше этого не делает)"</td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img62" onclick="modalWindow.show(document.getElementById('img62').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00062.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00062.PNG" class="small_imgs"></div>
 </td>
 <td><b>vyark </b>- "бывший набор выгод; набор выгод был в действии (и больше этого не делает)"</td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.3.3">4.3.3 [N] Обобщающая Перспектива</h3></a>
+<a href="#top"><h3>4.3.3 [N] Обобщающая Перспектива</h3></a>
 <p>Обобщающая перспектива ссылается на общую коллективную сущность или архетип, содержащий все члены или реализации конфигурационного набора по всему пространству и времени (или в пределах установленного контекста пространства-времени). Так как говориться о всех членах, а не об отдельных членах в частности, эта категория взаимно отлична от Ограниченной и Неограниченной Перспектив. Для существительных Обобщающая Перспектива соответствует приблизительно некоторым конструкциям, используемым, чтобы сослаться на коллективные существительные, как видно в предложениях &laquo;<b>Собака</b> является благородным зверем&raquo;, &laquo;<b>Клоуны</b> &ndash; это то, что дети любят больше всего&raquo;, &laquo;Там нет ничего подобного <b>дереву</b>&raquo;.</p>
 <p>С глаголами, Обобщающая Перспектива обозначает действие, событие или ситуацию, которые описывают всеобщий закон природы или устойчиво истинное состояние или ситуацию, о которой говориться в общих чертах, без указания определенной реализации или проявления активности (на самом деле, ссылаются на все возможные реализации или проявления). Не существует специализированного способа выражения такого общего утверждения, обычно используется простое настоящее время. Примерами использования были бы &laquo;Солнце не заходит на нашей планете&raquo;, &laquo;Мистер Окотеле нездоров&raquo;, &laquo;Зимой много снега&raquo;, &laquo;Эта девушка хорошо поет&raquo;. Примеры:</p>
 <table>
 <tr>
 <td>
 <div class="modal" id="img63" onclick="modalWindow.show(document.getElementById('img63').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00063.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00063.PNG" class="small_imgs"></div>
 </td>
 <td><b>akl&aacute;ţ </b>- "(текущая, -ие) река(-и) (как обобщенное понятие)"</td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img64" onclick="modalWindow.show(document.getElementById('img64').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00064.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00064.PNG" class="small_imgs"></div>
 </td>
 <td><b>u&rsquo;t&rsquo;ak&rsquo;ař&ccedil;</b> - "(сияющее, -ие) созвездие(-я) (как обобщенное понятие"</td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img65" onclick="modalWindow.show(document.getElementById('img65').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00065.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00065.PNG" class="small_imgs"></div>
 </td>
 <td><b>vyarx </b>- "набор выгод в действии (как обобщенное понятие"</td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.3.4">4.3.4 [A] Абстрактная Перспектива</h3></a>
+<a href="#top"><h3>4.3.4 [A] Абстрактная Перспектива</h3></a>
 <p>Подобно формированию в английском языке абстрактных существительных с использованием таких суффиксов как &ndash;hood или &ndash;ness, Абстрактная Перспектива превращает конфигурационную категорию в абстрактную концепцию, рассматриваемую внепространственном, вневременном, неисчислимом контексте. В то время как определенные существительные в английском языке могут становиться абстракциями с помощью суффиксов, все существительные Ифкуиль во всех Конфигурациях могут становиться абстракциями, перевод которых должен часто быть по своей природе описательным (иносказательным, перифрастическим), например, &laquo;роща &rarr; идея о существовании в виде рощи или рощество&raquo;, &laquo;книга &rarr; все о книгах, относящееся к книгам, вовлеченность с книгами&raquo;.</p>
 <p>С глаголами Абстрактная Перспектива используется в вербальных конструкциях для создания временных абстракций, где временное взаимоотношение действия, события или состояния по отношению к настоящему времени неуместны или неприменимы, подобно тому как английский инфинитив или герундий (используемый как заменитель для глагольной фразы) не выражает определенного времени в следующих предложениях: &laquo;<b>Пение</b> &ndash; это не его сильная сторона&raquo;, &laquo;Не имеет смысла <b>беспокоиться</b> об этом&raquo;, &laquo;Я не выношу, когда она <b>надувает губы</b>&raquo;. В результате, Абстрактная Перспектива действует как &laquo;вневременная&raquo; глагольная форма, которая подобно английским инфинитивам или герундиям, работает в соединении с отдельным главным глаголом в одной из трех других Перспективах. Абстрактная Перспектива часто используется в соединении с некоторыми Модальностями и Наклонениями глагола (смотрите 7.1. Модальность и 6.2. Наклонение), которые выражают гипотетические или нереализуемые ситуации, в которых временное взаимоотношение к настоящему времени произвольно, неприменимо или неизвестно. Примеры:</p>
 <table>
 <tr>
 <td>
 <div class="modal" id="img66" onclick="modalWindow.show(document.getElementById('img66').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00066.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00066.PNG" class="small_imgs"></div>
 </td>
 <td><b>akl&aacute;c </b>- "река как идея; все о том, как быть рекой; &laquo;речность(то есть качество или состояние реки)&raquo;"</td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img67" onclick="modalWindow.show(document.getElementById('img67').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00067.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00067.PNG" class="small_imgs"></div>
 </td>
 <td><b>u&rsquo;t&rsquo;ak&rsquo;apst</b> - "идея созвездия; &laquo;созвездность(то есть качество или состояние созвездия)&raquo;"</td>
 </tr>
 <tr>
 <td>
 <div class="modal" id="img68" onclick="modalWindow.show(document.getElementById('img68').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00068.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00068.PNG" class="small_imgs"></div>
 </td>
 <td><b>vyarč </b>- "идея об обладании/принесении выгод"</td>
 </tr>
 </table>
-<a href="#toc"><h2 id="r4.4">4.4. Протяженность</h2></a>
+<a href="#top"><h2 id="r4.4">4.4. Протяженность</h2></a>
 <p>Протяженность &ndash; это другая морфологическая категория Ифкуиля, для которой не существует точного эквивалента в других языках. Она применяется ко всем формативам и показывает способ, в котором существительное или глагол рассматриваются в терминах пространственного или временного объема или границ. Существует шесть Протяженностей: Полное, Частичная, Зарождающаяся, Завершающаяся, Убывающая, Прибывающая.</p>
 <p>Протяженность показана как часть аффикса <b>Ca</b>, также показывающего Конфигурацию, Принадлежность, Перспективу и Сущность. Значения этого аффикса показаны в разделе 4.5.3.</p>
 <table border class="center">
@@ -803,146 +755,146 @@
 <td><b>[ударение]</b></td>
 </tr>
 <tr>
-<td>Phase + Sanction (+ Illocution)</td>
-<td>Valence</td>
-<td>Validation ИЛИ Aspect(+Mood)</td>
-<td>Вариант + Основа + Function</td>
-<td>Присоединенный корень ИЛИ Phase + Sanction(+ Illocution)</td>
-<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Valence</td>
+<td>Продолжительность + Утверждение (+ Иллокуция)</td>
+<td>Валентность</td>
+<td>Обоснование ИЛИ ВИд(+Наклонение)</td>
+<td>Вариант + Основа + Функция</td>
+<td>Присоединенный корень ИЛИ Продолжительность + Утверждение(+ Иллокуция)</td>
+<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Валентность</td>
 <td>Корень</td>
 <td>Падеж</td>
-<td>Illocution + Mood</td>
+<td>Иллокуция + Наклонение</td>
 <td class="highlighted">Сущность + <b>Протяженность</b> + Перспектива + Конфигурация + Принадлежность</td>
 <td>Словообраз. суффикс</td>
 <td>Контекст + Формат</td>
-<td>Bias</td>
-<td>Version</td>
-<td>Назначение + Relation</td>
+<td>Отношение</td>
+<td>Исполнение</td>
+<td>Назначение + Связь</td>
 </tr>
 </table>
 <p>Также Протяженность может быть показана при помощи маркировки соседнего глагольного определителя, что разъяснено в разделе 7.3.5.</p>
 <p>Дальше в деталях показано, как функционирует каждая из шести Протяженностей.</p>
-<a href="#toc"><h3 id="r4.4.1">4.4.1. [DEL] Полная Протяженность</h3></a>
+<a href="#top"><h3>4.4.1. [DEL] Полная Протяженность</h3></a>
 <p>Полная Протяженность означает, что о существительном упоминается в его контекстуальной цельности (полноте), как об отдельной сущности с четкими пространственно-временными границами, без выделения какой-либо отдельной части, края, границы, предела, или проявления вне рассматриваемого контекста. Полная Протяженность может рассматриваться, как нейтральная точка зрения или точка зрения по умолчанию, например, &laquo;дерево, роща, набор книг, армия&raquo;. Чтобы проиллюстрировать контекстный пример, предложение &laquo;Он поднялся по лестнице&raquo; (полнялся по лестнице куда-то, куда ведет лестница) переводилось бы с использованием слова &laquo;лестница&raquo; в Полной Протяженности, чтобы показать, что оно рассматривается как целое. С глаголами Полная Протяженность означает, что действие, состояние, или событие рассматривается в его цельности (полноте), от начала до конца, например, &laquo;Она садится на диету каждую зиму&raquo; (т.е. она начинает и заканчивает каждую диету).</p>
 <p>О Полном Распространении можно думать, как о протяжении пространства-времени, которое имеет точные начальные и конечные точки, вне которых существительное или глагол не существует или не происходит. Картинка ниже иллюстрирует пространственно-временные взаимоотношение концепции в Полном Распространении по отношению к рассматриваемому контексту (т.е. пространственно-временному &laquo;настоящему&raquo;).</p>
 <div class="modal" id="img69" onclick="modalWindow.show(document.getElementById('img69').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00069.PNG" class="big_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00069.PNG" class="big_imgs"></div>
 <p>Примеры:</p>
 <table class="center">
 <tr>
 <td>
 <div class="modal" id="img70" onclick="modalWindow.show(document.getElementById('img70').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00070.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00070.PNG" class="small_imgs"></div><br>
 <b>akl&aacute;l</b> - "река"
 </td>
 <td>
 <div class="modal" id="img71" onclick="modalWindow.show(document.getElementById('img71').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00071.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00071.PNG" class="small_imgs"></div><br>
 <b>p&scaron;a&scaron;k</b> - "ситуация"
 </td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.4.2">4.4.2. [PRX] Частичная Протяженность</h3></a>
+<a href="#top"><h3>4.4.2. [PRX] Частичная Протяженность</h3></a>
 <p>Частичная Протяженность означает, что о существительном или глаголе упоминается не в его цельности (полноте), а скорее только в терминах части, продолжительности, подмножества, или аспекта, которые имеют отношение к настоящему контексту. Частичная Протяженность могло бы использоваться, чтобы перевести слова &laquo;дерево, путешествие, лестница&raquo; в предложениях &laquo;Это дерево твердое там, (например, в точке, где я ударился об него), Она потеряла вес в течение своего путешествия, или Он поднялся на лестницу (т.е. не имеет никакого отношения к контексту знание о том, проделал ли он весь путь до верха)&raquo;. Заметьте, что в этих предложениях Частичная Протяженность не указывает на определенные или очерченные части, доли, или компоненты дерева или лестницы, но скорее на факт, что очерченные границы, такие как концы лестницы или целостность дерева, не имеют отношения или не применимы к настоящему контексту. С глаголами Частичная Протяженность означает, что рассматривается не целостность (полнота) действия, состояния, или события, но скорее пространственное распространение или период продолжительности действия, состояния, или события, имеющие отношение к контексту, например, &laquo;Она сидит на диете каждую зиму (т.е. фокусируясь на &laquo;быть вынужденным жить&raquo; на диете, а не полное время, проведенное на диете от начала до конца)&raquo;.</p>
 <p>Картинка ниже иллюстрирует пространственно-временные взаимоотношения концепции существительного или глагола в Частичной Протяженности по отношению к рассматриваемому контексту (т.е. пространственно-временному &laquo;настоящему&raquo;).</p>
 <div class="modal" id="img72" onclick="modalWindow.show(document.getElementById('img72').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00072.PNG" class="big_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00072.PNG" class="big_imgs"></div>
 <p>Примеры:</p>
 <table class="center">
 <tr>
 <td>
 <div class="modal" id="img73" onclick="modalWindow.show(document.getElementById('img73').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00073.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00073.PNG" class="small_imgs"></div><br>
 <b>akl&aacute;s</b> - "участок/отрезок реки"
 </td>
 <td>
 <div class="modal" id="img74" onclick="modalWindow.show(document.getElementById('img74').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00074.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00074.PNG" class="small_imgs"></div><br>
 <b>p&scaron;ams</b> - "середина ситуации"
 </td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.4.3">4.4.3. [ICP] Зарождающаяся Протяженность</h3></a>
+<a href="#top"><h3>4.4.3. [ICP] Зарождающаяся Протяженность</h3></a>
 <p>Зарождающаяся Протяженность фокусируется на ближайшей границе, начале, возникновении, или непосредственно достижимой части существительного или глагола, без сосредоточения на границах оставшейся части. Зарождающаяся Протяженность использовалась бы при переводе существительных &laquo;тоннель, песня, пустыня, рассвет и план&raquo; в следующих предложениях: &laquo;Мы посмотрели в жерло тоннеля, Он узнает эту песню (т.е. с нескольких первых нот), Они вышли на просторы пустыни, Давай подождем рассвета, Я разрабатываю план (т.е. план, над которым только что думал)&raquo;. В глагольных контекстах Зарождающаяся Протяженность соответствовала бы &laquo;начинать что-то&raquo; как в &laquo;Он начал читать, Он начинает линять, или Она садиться на диету каждую зиму&raquo;.</p>
 <p>Картинка ниже иллюстрирует пространственно-временные взаимоотношения концепции существительного или глагола в Зарождающейся Протяженности по отношению к рассматриваемому контексту (т.е. пространственно-временному &laquo;настоящему&raquo;).</p>
 <div class="modal" id="img75" onclick="modalWindow.show(document.getElementById('img75').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00075.PNG" class="big_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00075.PNG" class="big_imgs"></div>
 <p>Примеры:</p>
 <table>
 <tr>
 <td>
 <div class="modal" id="img76" onclick="modalWindow.show(document.getElementById('img76').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00076.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00076.PNG" class="small_imgs"></div><br>
 <b>klamt&aacute;</b> - "начало реки"
 </td>
 <td>
 <div class="modal" id="img77" onclick="modalWindow.show(document.getElementById('img77').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00077.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00077.PNG" class="small_imgs"></div><br>
 <b>p&scaron;ap&scaron;t&rsquo;</b> - "начало ситуации"
 </td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.4.4">4.4.4. [TRM] Завершающаяся Протяженность</h3></a>
+<a href="#top"><h3>4.4.4. [TRM] Завершающаяся Протяженность</h3></a>
 <p>Завершающаяся Протяженность фокусируется на конце, окончании, последней части, или конечной границе существительного, без сосредоточения на предшествующем или на прежде существующем состоянии существительного. Завершающееся Протяженность использовалось бы в переводе слов &laquo;вода, история и прибытие&raquo; в предложениях &laquo;Нет воды (т.е. закончилась), Мне нравится конец истории, Мы ожидаем твоего прибытия&raquo;. С глаголами Завершающееся Протяженность иллюстрируется с помощью предложений &laquo;Он закончил линять, или Она закончила сидеть на диете&raquo;.</p>
 <p>Картинка ниже иллюстрирует пространственно-временные взаимоотношения концепции существительного или глагола в Завершающемся Распространении по отношению к рассматриваемому контексту (т.е. пространственно-временному &laquo;настоящему&raquo;).</p>
 <div class="modal" id="img78" onclick="modalWindow.show(document.getElementById('img78').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00078.PNG" class="big_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00078.PNG" class="big_imgs"></div>
 <p>Примеры:</p>
 <table>
 <tr>
 <td>
 <div class="modal" id="img79" onclick="modalWindow.show(document.getElementById('img79').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00079.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00079.PNG" class="small_imgs"></div><br>
 <b>klat&rsquo;&aacute;</b> - "конец реки"
 </td>
 <td>
 <div class="modal" id="img80" onclick="modalWindow.show(document.getElementById('img80').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00080.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00080.PNG" class="small_imgs"></div><br>
 <b>p&scaron;akt&rsquo;</b> - "конец ситуации"
 </td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.4.5">4.4.5. [DPL] Убывающая Протяженность</h3></a>
+<a href="#top"><h3>4.4.5. [DPL] Убывающая Протяженность</h3></a>
 <p>Убывающая Протяженность фокусируется на конечной границе или &laquo;конечном&raquo; крае существительного, где этот конечный пункт плохо определен, &laquo;рассеян&raquo;, или протяжен до некоторой степени, (т.е. настоящий контекст существительного &laquo;иссякает&raquo; или постепенно завершается). По существу, Убывающая Протяженность применяется к любому контексту, включающему в себя действительное или переносное постепенное исчезновение. Убывающая Протяженность использовалась бы при переводе слов &laquo;вода, сила, сумерки&raquo; в предложениях &laquo;Он выпил последнюю воду, У меня осталось мало силы, Она исчезла в сумерках&raquo;. Для глаголов примером Убывающей Протяженности являются фразы &laquo;подуть вниз, увянуть, постепенно исчезать&raquo; и похожие понятия, например, &laquo;Она ест меньше и меньше в эти дни&raquo;.</p>
 <p>Картинка ниже иллюстрирует пространственно-временные взаимоотношения концепции существительного или глагола в Убывающей Протяженности по отношению к рассматриваемому контексту (т.е. пространственно-временному &laquo;настоящему&raquo;).</p>
 <div class="modal" id="img81" onclick="modalWindow.show(document.getElementById('img81').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00081.PNG" class="big_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00081.PNG" class="big_imgs"></div>
 <p>Примеры:</p>
 <table>
 <tr>
 <td>
 <div class="modal" id="img82" onclick="modalWindow.show(document.getElementById('img82').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00082.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00082.PNG" class="small_imgs"></div><br>
 <b>klakc&aacute;</b> - "устье реки"
 </td>
 <td>
 <div class="modal" id="img83" onclick="modalWindow.show(document.getElementById('img83').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00083.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00083.PNG" class="small_imgs"></div><br>
 <b>p&scaron;aňsk</b> - "последние следы ситуации"
 </td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.4.6">4.4.6 [GRD] Прибывающая Протяженность</h3></a>
+<a href="#top"><h3>4.4.6 [GRD] Прибывающая Протяженность</h3></a>
 <p>Прибывающая Протяженность является противоположностью Убывающей, фокусируясь на расплывчатом протяженном &laquo;постепенном появлении&raquo; или постепенном начале существительного. Прибывающая Протяженность использовалась бы при переводе слов &laquo;темнота, изумление, музыка&raquo; в следующих предложениях: &laquo;Темнота упала на нас, Я почувствовал нарастающее чувство изумления, Музыка была очень тихой в начале&raquo;. Для глаголов Прибывающая Протяженность иллюстрируется такими глаголами и фразами, как &laquo;постепенно появляться, постепенно начинаться, наращивать&raquo; и подобными понятиями, например, &laquo;Она в последнее время ест все больше и больше&raquo;.</p>
 <p>Картинка ниже иллюстрирует пространственно-временные взаимоотношения концепции существительного или глагола в Прибывающей Протяженности по отношению к рассматриваемому контексту (т.е. пространственно-временному &laquo;настоящему&raquo;).</p>
 <div class="modal" id="img84" onclick="modalWindow.show(document.getElementById('img84').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00084.PNG" class="big_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00084.PNG" class="big_imgs"></div>
 <p>Примеры:</p>
 <table>
 <tr>
 <td>
 <div class="modal" id="img85" onclick="modalWindow.show(document.getElementById('img85').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00085.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00085.PNG" class="small_imgs"></div><br>
 <b>klakc&rsquo;&aacute;</b> - "истоки реки"
 </td>
 <td>
 <div class="modal" id="img86" onclick="modalWindow.show(document.getElementById('img86').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00086.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00086.PNG" class="small_imgs"></div><br>
 <b>p&scaron;aňsk&rsquo;</b> - "постепенно развивающаяся ситуация"
 </td>
 </tr>
 </table>
-<a href="#toc"><h2 id="r4.5">4.5. Сущность</h2></a>
+<a href="#top"><h2 id="r4.5">4.5. Сущность</h2></a>
 <p>Сущность относится к двоякому морфологическому различению, не имеющему своего аналога в западных языках. Сущность лучше всего объясняется с помощью рассмотрения различных языковых иллюстраций. Сравните следующие части предложений:</p>
 <p>1а) Мальчик убежал к морю.</p>
 <p>1б) Мальчик, что бежал к морю, не прибежал к морю.</p>
@@ -954,7 +906,7 @@
 <p>4) Эта девушка может петь лучше, чем кто-либо.</p>
 <p>5) Нам нужно атаковать на рассвете.</p>
 <p>Каждое из этих трех предложений выше описывает возможные события, а не действительное в реальном мире событие, которое происходит или произошло. Например, в предложении (3) или кто-то еще не пришел домой, или мы не знаем, возможен ли вообще приход домой, в предложении (4) девушка может никогда не спеть ни единой ноты, насколько мы знаем, и предложение (5) не дает нам никакой информации о том, произойдет ли действительно атака.</p>
-<a href="#toc"><h3 id="r4.5.1">4.5.1. [NRM] Реальная и [RPV] Воображаемая Сущности</h3></a>
+<a href="#top"><h3>4.5.1. [NRM] Реальная и [RPV] Воображаемая Сущности</h3></a>
 <p>Категория Сущности явно различает факты реального мира от их альтернативных, воображаемых или возможных дополнений. Две Сущности называются Реальная и Воображаемая. Реальная Сущность является Сущностью по умолчанию, обозначающую существительные и глаголы реального мира. Воображаемая Сущность обозначает альтернативные дополняющие. Отмечая такие дополнения друг к другу, Ифкуиль позволяет говорящему выражать любые существительный или глагол, как ссылающийся на реальный мир, в противоположность альтернативному проявлению, без того, чтобы слушающий делал заключение об этом из объясняемого контекста.</p>
 <p>Сущность является частью аффикса <b>Ca</b>, также обозначающего Конфигурацию, Принадлежность, Перспективу и Протяженность. Значения этого аффикса показаны ниже в разделе 4.5.3.</p>
 <table border class="center">
@@ -993,30 +945,30 @@
 <td><b>[ударение]</b></td>
 </tr>
 <tr>
-<td>Phase + Sanction (+ Illocution)</td>
-<td>Valence</td>
-<td>Validation ИЛИ Aspect(+Mood)</td>
-<td>Вариант + Основа + Function</td>
-<td>Присоединенный корень ИЛИ Phase + Sanction(+ Illocution)</td>
-<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Valence</td>
+<td>Продолжительность + Утверждение (+ Иллокуция)</td>
+<td>Валентность</td>
+<td>Обоснование ИЛИ ВИд(+Наклонение)</td>
+<td>Вариант + Основа + Функция</td>
+<td>Присоединенный корень ИЛИ Продолжительность + Утверждение(+ Иллокуция)</td>
+<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Валентность</td>
 <td>Корень</td>
 <td>Падеж</td>
-<td>Illocution + Mood</td>
+<td>Иллокуция + Наклонение</td>
 <td class="highlighted"><b>Сущность</b> + Протяженность + Перспектива + Конфигурация + Принадлежность</td>
 <td>Словообраз. суффикс</td>
 <td>Контекст + Формат</td>
-<td>Bias</td>
-<td>Version</td>
-<td>Назначение + Relation</td>
+<td>Отношение</td>
+<td>Исполнение</td>
+<td>Назначение + Связь</td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.5.2">4.5.2. Примеры использования Сущности</h3></a>
+<a href="#top"><h3>4.5.2. Примеры использования Сущности</h3></a>
 <p>Сравните следующие два предложения и их переводы для того, чтобы увидеть, как применение Воображаемой Сущности в различных формативах меняет их значение.</p>
-<table>
+<table class="example">
 <tr>
 <td>
 <div class="modal" id="img87" onclick="modalWindow.show(document.getElementById('img87').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00087.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00087.PNG" class="small_imgs"></div>
 </td>
 </tr>
 <tr>
@@ -1035,11 +987,11 @@ STA-&lsquo;видеть&rsquo;-<b>NRM</b>/DEL/M/CSL/UNI-IFL STA-&lsquo;мужч�
 </td>
 </tr>
 </table><br>
-<table>
+<table class="example">
 <tr>
 <td>
 <div class="modal" id="img88" onclick="modalWindow.show(document.getElementById('img88').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00088.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00088.PNG" class="small_imgs"></div>
 </td>
 </tr>
 <tr>
@@ -1058,11 +1010,11 @@ STA-&lsquo;видеть&rsquo;-<b>RPV</b>/DEL/M/CSL/UNI-IFL STA-&lsquo;мужч�
 </td>
 </tr>
 </table><br>
-<table>
+<table class="example">
 <tr>
 <td>
 <div class="modal" id="img89" onclick="modalWindow.show(document.getElementById('img89').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00089.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00089.PNG" class="small_imgs"></div>
 </td>
 </tr>
 <tr>
@@ -1082,7 +1034,7 @@ EXN<sub>1</sub>/6 DYN-&lsquo;двигаться наискосок по верт
 </tr>
 </table>
 <p>В последнем примере не обязательно кому-либо находиться на дороге(включая говорящего), так что ее крутизна существует только как идея/предположение в разуме говорящего.</p>
-<a href="#toc"><h3 id="r4.5.3">4.5.3. Таблицы аффиксов для Конфигурации, Принадлежности, Перспективы, Протяженности и Сущности</h3></a>
+<a href="#top"><h3>4.5.3. Таблицы аффиксов для Конфигурации, Принадлежности, Перспективы, Протяженности и Сущности</h3></a>
 <p>Таблицы с 5(а) до 5(м) ниже показывают все значения аффикса <b>Ca</b>, синтетического аффикса, который показывает, как все девять Конфигураций, четыре Принадлежности, четыре Перспективы, шесть Протяженностей и две Сущности применяются к конкретной основе.</p>
 <table border class="center">
 <tr>
@@ -1120,21 +1072,21 @@ EXN<sub>1</sub>/6 DYN-&lsquo;двигаться наискосок по верт
 <td><b>[ударение]</b></td>
 </tr>
 <tr>
-<td>Phase + Sanction (+ Illocution)</td>
-<td>Valence</td>
-<td>Validation ИЛИ Aspect(+Mood)</td>
-<td>Вариант + Основа + Function</td>
-<td>Присоединенный корень ИЛИ Phase + Sanction(+ Illocution)</td>
-<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Valence</td>
+<td>Продолжительность + Утверждение (+ Иллокуция)</td>
+<td>Валентность</td>
+<td>Обоснование ИЛИ ВИд(+Наклонение)</td>
+<td>Вариант + Основа + Функция</td>
+<td>Присоединенный корень ИЛИ Продолжительность + Утверждение(+ Иллокуция)</td>
+<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Валентность</td>
 <td>Корень</td>
 <td>Падеж</td>
-<td>Illocution + Mood</td>
+<td>Иллокуция + Наклонение</td>
 <td class="highlighted">Сущность + Протяженность + Перспектива + Конфигурация + Принадлежность</td>
 <td>Словообраз. суффикс</td>
 <td>Контекст + Формат</td>
-<td>Bias</td>
-<td>Version</td>
-<td>Назначение + Relation</td>
+<td>Отношение</td>
+<td>Исполнение</td>
+<td>Назначение + Связь</td>
 </tr>
 </table>
 <p><b>Таблицы 5(а) - 5(м): Значения аффикса форматива Ca в зависимости от Конфигурации, Принадлежности, Перспективы, Протяженности и Сущности</b></p><br>
@@ -3754,23 +3706,23 @@ EXN<sub>1</sub>/6 DYN-&lsquo;двигаться наискосок по верт
 <td>ňn</td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.5.4">4.5.4. Дополнительный пример Конфигурации, Принадлежности, Перспективы, Протяженности и Сущности</h3></a>
+<a href="#top"><h3>4.5.4. Дополнительный пример Конфигурации, Принадлежности, Перспективы, Протяженности и Сущности</h3></a>
 <table>
 <tr>
 <td><b>ek&scaron;&aacute;</b>-"клоун"<br>
 <b>egw</b>-"бег большими шагами"</td>
 <td><b>-&nbsp;&gt;</b></td>
 <td><div class="modal" id="img90" onclick="modalWindow.show(document.getElementById('img90').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00090.PNG" class="small_imgs"></div>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00090.PNG" class="small_imgs"></div>
 <div class="modal" id="img91" onclick="modalWindow.show(document.getElementById('img91').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00091.PNG" class="tab small_imgs"></div><br>
-<b>Aigwapskʰ ek&scaron;&uacute;lļ.</b><br>
-DYN-&lsquo;бег большими шагами&rsquo;-<b>NRM/ICP/M/VAR/COH</b>-IFL<br>
-STA-&lsquo;клоун&rsquo;-IND-<b>NRM/DEL/M/ASO/DCT</b>-FML
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00091.PNG" class="tab small_imgs"></div><br>
+<b style="font-size:1.2rem">Aigwapskʰ ek&scaron;&uacute;lļ.</b><br>
+<span style="font-size:0.8rem">DYN-&lsquo;бег большими шагами&rsquo;-<b>NRM/ICP/M/VAR/COH</b>-IFL<br>
+STA-&lsquo;клоун&rsquo;-IND-<b>NRM/DEL/M/ASO/DCT</b>-FML</span>
 <br>(Группа) клоунов начинает спотыкаться на бегу.</td>
 </tr>
 </table>
-<a href="#toc"><h2 id="r4.6">4.6. Контекст</h2></a>
+<a href="#top"><h2 id="r4.6">4.6. Контекст</h2></a>
 <p>Контекст &ndash; это еще одна морфологическая категория, не имеющая эквивалента в других языках. Контекст показывает то, какие осязаемые или неосязаемые особенности или аспекты форматива подразумеваются психологически в любом данном высказывании. Нет другого способа показать это при переводе, нежели с помощью парафраза. Существует четыре контекста: Объективный, Субъективный, Метафорический, Собирательный, показанные с помощью суффикса <b>Vf</b>, который также передает глагольный Формат(категория Формата рассматривается в разделе 7.4). Таблица 6 ниже показывает значения этого суффикса.</p>
 <table border class="center">
 <tr>
@@ -3808,21 +3760,21 @@ STA-&lsquo;клоун&rsquo;-IND-<b>NRM/DEL/M/ASO/DCT</b>-FML
 <td><b>[ударение]</b></td>
 </tr>
 <tr>
-<td>Phase + Sanction (+ Illocution)</td>
-<td>Valence</td>
-<td>Validation ИЛИ Aspect(+Mood)</td>
-<td>Вариант + Основа + Function</td>
-<td>Присоединенный корень ИЛИ Phase + Sanction(+ Illocution)</td>
-<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Valence</td>
+<td>Продолжительность + Утверждение (+ Иллокуция)</td>
+<td>Валентность</td>
+<td>Обоснование ИЛИ ВИд(+Наклонение)</td>
+<td>Вариант + Основа + Функция</td>
+<td>Присоединенный корень ИЛИ Продолжительность + Утверждение(+ Иллокуция)</td>
+<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Валентность</td>
 <td>Корень</td>
 <td>Падеж</td>
-<td>Illocution + Mood</td>
+<td>Иллокуция + Наклонение</td>
 <td>Сущность + Протяженность + Перспектива + Конфигурация + Принадлежность</td>
 <td>Словообраз. суффикс</td>
 <td class="highlighted"><b>Контекст</b> + Формат</td>
-<td>Bias</td>
-<td>Version</td>
-<td>Назначение + Relation</td>
+<td>Отношение</td>
+<td>Исполнение</td>
+<td>Назначение + Связь</td>
 </tr>
 </table>
 <p><b>Таблица 6: суффикс Vf в конце слова &mdash; 4 Контекста &times; 9 Форматов</b></p>
@@ -3897,13 +3849,13 @@ STA-&lsquo;клоун&rsquo;-IND-<b>NRM/DEL/M/ASO/DCT</b>-FML
 </tr>
 </table>
 <p>Четыре Контекста рассматриваются ниже и иллюстрируются с помощью примеров перевода на Ифкуиль предложения "Оркестр играет".</p>
-<a href="#toc"><h3 id="r4.6.1">4.6.1. [EXS] Объективный Контекст</h3></a>
+<a href="#top"><h3>4.6.1. [EXS] Объективный Контекст</h3></a>
 <p>Объективный Контекст фокусируется на тех особенностях существительного или глагола, что являются онтологически объективными, т.е. те, что существуют независимо от любых наблюдателей, мнений, интерпретаций, верований или взглядов. Так же исключено из рассмотрения в Объективном Контексте любое понятие использования, функции, роли, или пользы существительного. Объективный Контекст служит только, чтобы показать, не более чем, существование существительного как осязаемой, объективной сущности в обсуждении. Таким образом Объективный Контекст используется для простой идентификации существительного или глагола.</p>
 <p>Например, рассмотрите предложение &laquo;Кошка пробежала мимо дверного проема&raquo;. Если слова Ифкуиль, соответствующие &laquo;кошка&raquo;, &laquo;бежать&raquo;, и &laquo;дверной проем&raquo; находятся в Объективном Контексте, тогда предложение просто описывает объективную сцену. Не подразумевается подтекста относительно субъективной природы этих двух сущностей или затрагиваемого действия. Предложение просто утверждает, что две сущности в текущий момент имеют определенное динамическое пространственное взаимоотношение друг с другом; эти две сущности как раз оказались &laquo;кошкой&raquo; и &laquo;дверным проемом&raquo;, и &laquo;бежать&raquo; просто передает природу пространственного взаимоотношения.</p>
-<table>
+<table class="example">
 <tr>
 <td><div class="modal" id="img92" onclick="modalWindow.show(document.getElementById('img92').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00092.PNG" class="small_imgs"></div></td>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00092.PNG" class="small_imgs"></div></td>
 </tr>
 <tr>
 <td><b>Ilma&scaron;q&ocirc;n</b><b>.</b></td>
@@ -3915,13 +3867,13 @@ STA-&lsquo;клоун&rsquo;-IND-<b>NRM/DEL/M/ASO/DCT</b>-FML
 <td>Оркестр играет.[нейтральное описание события]</td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.6.2">4.6.2. [FNC] Субъективный Контекст</h3></a>
+<a href="#top"><h3>4.6.2. [FNC] Субъективный Контекст</h3></a>
 <p>Субъективный Контекст фокусируется на тех особенностях форматива, которые определяются в социальном смысле с помощью идей, взглядов, верований, мнений, обычаем, культурным статусом, использованием, функцией, пользой, и т.п. Субъективный Контекст служит для определения не того, чем экзистенциально является существительное, а чтобы показать, что существительное имеет специфическое (и субъективное) контекстуальное значение, уместность или цель.</p>
 <p>Например, в нашем предыдущем предложении &laquo;Кошка пробежала мимо дверного проема&raquo;, если мы поместим &laquo;кошка&raquo;, &laquo;дверной проем&raquo; и действие &laquo;бежать&raquo; в Субъективный Контекст, &laquo;кошка&raquo; больше не просто идентифицирует участника, оно делает существование &laquo;кошки&raquo; (или скажем &laquo;собаки&raquo;) значимым, например, из-за того, что говорящий может бояться кошек, или из-за того, что кошка могла забежать в комнату и повредить обстановку, или из-за того, что кошки ассоциируются с тайной, или из-за того, что сосед искал потерянную кошку, и т.п. &laquo;Дверной проем&raquo; теперь передает свое назначение как вход, усиливая то, что кошка может сделать при входе. Так же, глагол &laquo;бежать&raquo; в Субъективном Контексте теперь подразумевает скрытную природу кошки.</p>
-<table>
+<table class="example">
 <tr>
 <td><div class="modal" id="img93" onclick="modalWindow.show(document.getElementById('img93').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00093.PNG" class="small_imgs"></div></td>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00093.PNG" class="small_imgs"></div></td>
 </tr>
 <tr>
 <td><b>Ilma&scaron;q&ocirc;ni.</b></td>
@@ -3933,13 +3885,13 @@ STA-&lsquo;клоун&rsquo;-IND-<b>NRM/DEL/M/ASO/DCT</b>-FML
 <td>Оркестр играет.[внимание на личном значении/важности события]</td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.6.3">4.6.3. [RPS] Метафорический Контекст</h3></a>
+<a href="#top"><h3>4.6.3. [RPS] Метафорический Контекст</h3></a>
 <p>Метафорический Контекст фокусируется на формативе как на символе, метафоре, метонимии *, так как Метафорический Контекст означает, что форматив служит как представление или заменитель для некоторых других концепций или сущностей, которые абстрактно связаны с ним. Например, метафорическое сопутствующее значение предложения &laquo;Та собака в костюме из ткани в тонкую полоску отмечает кошку при её уходе с работы&raquo; может равно передано в Ифкуиль с помощью склонения слов для &laquo;собака&raquo; и &laquo;кошка&raquo; в Метафорическом Контексте. Метафорический Контекст &ndash; это один из способов, которым Ифкуиль явно передает все метафорические, символические, или метонимические употребления (с грамматической точки зрения).</p>
 <p style="font-size: 0.8rem">* Метонимия &ndash; использование слова или фразы одного типа, чтобы ссылаться на ассоциированное слово или фразу другого типа (обычно личность), как место-личность в &laquo;Приказы пришли из Белого Дома&raquo;, как объект-личность в &laquo;Скажите повару, что ветчина с сыром нуждается в жарке под его руководством&raquo;, или как фраза-личность в &laquo;Ты-знаешь-кто только что появился&raquo;.</p>
-<table>
+<table class="example">
 <tr>
 <td><div class="modal" id="img94" onclick="modalWindow.show(document.getElementById('img94').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00094.PNG" class="small_imgs"></div></td>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00094.PNG" class="small_imgs"></div></td>
 </tr>
 <tr>
 <td><b>Ilma&scaron;q&ocirc;ne.</b></td>
@@ -3951,12 +3903,12 @@ STA-&lsquo;клоун&rsquo;-IND-<b>NRM/DEL/M/ASO/DCT</b>-FML
 <td>Оркестр играет.[подразумевает, что предложение является метафорой, например, "жизнь - это симфония"]</td>
 </tr>
 </table>
-<a href="#toc"><h3 id="r4.6.4">4.6.4. [AMG] Собирательный Контекст</h3></a>
+<a href="#top"><h3>4.6.4. [AMG] Собирательный Контекст</h3></a>
 <p>Собирательный Контекст является наиболее абстрактным и трудным для понимания из перспективы западной лингвистики. Собирательный Контекст фокусируется на систематической, холистической, гештальт подобной, компонентной природе форматива, подразумеваеющей, что его объективное и субъективное множество взаимоусиливающе выводится из (или как новое свойство) взаимных связей между всеми её частями, не только в терминах статичной кратковременной оценки, а в рассмотрении полной эволюционной истории существительного и любых взаимодействий и взаимоотношений, которые оно имеет (в прошлом ли, в настоящем или в потенциале) внутри огромного контекста всего мира. Его использование показывает, что говорящий побуждает слушающего субъективно рассмотреть все субъективные сомнения, эмоциональные нюансы, психологические последствия (ветвления) и/или философские выводы, связанные с существованием, назначением, или функцией существительного, как являющего словом в себе, по своей природе связанным с более широким миром вне самого существительного на многих уровнях. Таким образом, версия нашего предложения &laquo;Кошка пробежала мимо дверного проема&raquo; в Собирательном Контексте имело бы довольно мелодраматические подтексты, &laquo;кошка&raquo; как представитель всего о кошках, и всего, что они символизируют, и &laquo;дверной проем&raquo; как представитель природы дверных проемов, как ворота перехода, начальная точка отправления, и место соединения прошлого и будущего, в то время как действие &laquo;бежать&raquo; становится представителем бегства от врагов, скоростью движения, телом на максимуме потребления энергии, и т.п.</p>
-<table>
+<table class="example">
 <tr>
 <td><div class="modal" id="img95" onclick="modalWindow.show(document.getElementById('img95').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00095.PNG" class="small_imgs"></div></td>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00095.PNG" class="small_imgs"></div></td>
 </tr>
 <tr>
 <td><b>Ilma&scaron;q&ocirc;nu.</b></td>
@@ -3968,8 +3920,8 @@ STA-&lsquo;клоун&rsquo;-IND-<b>NRM/DEL/M/ASO/DCT</b>-FML
 <td>Оркестр играет.[подразумевает внимание на эмоциональном воздействии, а также культурном смысле события]</td>
 </tr>
 </table>
-<a href="#toc"><h2 id="r4.7">4.7. Назначение</h2></a>
-<p>Назначение является до некоторой степени субъективной категорией, без эквивалента в западных языках. Назначение относится к двойственному различению в формативе, рассматривающему его контекстуальный статус, авторитет, постоянство, или сверх-контекстуальную важность. Два Назначения &ndash; Неформальное и Формальное, показываются с помощью слогового ударения в формативе(в соединении с глагольной категорией Relation, которая будет рассмотрена в разделе 6.4).</p>
+<a href="#top"><h2 id="r4.7">4.7. Назначение</h2></a>
+<p>Назначение является до некоторой степени субъективной категорией, без эквивалента в западных языках. Назначение относится к двойственному различению в формативе, рассматривающему его контекстуальный статус, авторитет, постоянство, или сверх-контекстуальную важность. Два Назначения &ndash; Неформальное и Формальное, показываются с помощью слогового ударения в формативе(в соединении с глагольной категорией Связи, которая будет рассмотрена в разделе 6.4).</p>
 <table border class="center">
 <tr>
 <td>I</td>
@@ -4006,29 +3958,29 @@ STA-&lsquo;клоун&rsquo;-IND-<b>NRM/DEL/M/ASO/DCT</b>-FML
 <td class="highlighted"><b>[ударение]</b></td>
 </tr>
 <tr>
-<td>Phase + Sanction (+ Illocution)</td>
-<td>Valence</td>
-<td>Validation ИЛИ Aspect(+Mood)</td>
-<td>Вариант + Основа + Function</td>
-<td>Присоединенный корень ИЛИ Phase + Sanction(+ Illocution)</td>
-<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Valence</td>
+<td>Продолжительность + Утверждение (+ Иллокуция)</td>
+<td>Валентность</td>
+<td>Обоснование ИЛИ ВИд(+Наклонение)</td>
+<td>Вариант + Основа + Функция</td>
+<td>Присоединенный корень ИЛИ Продолжительность + Утверждение(+ Иллокуция)</td>
+<td>Вариант + Основа + Назначение присоединенного корня ИЛИ Валентность</td>
 <td>Корень</td>
 <td>Падеж</td>
-<td>Illocution + Mood</td>
+<td>Иллокуция + Наклонение</td>
 <td>Сущность + Протяженность + Перспектива + <b>Конфигурация</b> + Принадлежность</td>
 <td>Словообраз. суффикс</td>
 <td>Контекст + Формат</td>
-<td>Bias</td>
-<td>Version</td>
-<td class="highlighted"><b>Назначение</b> + Relation</td>
+<td>Отношение</td>
+<td>Исполнение</td>
+<td class="highlighted"><b>Назначение</b> + Связь</td>
 </tr>
 </table>
 <p>Два Назначения рассматриваются ниже.</p>
-<a href="#toc"><h3 id="r4.7.1">4.7.1. [IFL] Неформальное Назначение</h3></a>
-<p>Неформальное Назначение показывается ударением либо на предпоследний, либо на третий с конца слог форматива, в зависимости от его Relation(смотрите раздел 6.4).</p>
+<a href="#top"><h3>4.7.1. [IFL] Неформальное Назначение</h3></a>
+<p>Неформальное Назначение показывается ударением либо на предпоследний, либо на третий с конца слог форматива, в зависимости от его Связи(смотрите раздел 6.4).</p>
 <p>Неформальное Назначение показывает, что существительное или глагол не существуют в обязательно постоянном состоянии или рассматривается только в продолжительности контекста, в котором идет разговор, при этом любой длительный эффект, воздействие, или постоянство за пределами контекста отсутствует, неизвестен или неуместен. Это лучше всего иллюстрируется в сравнении с Формальным Назначением при помощи примеров ниже.</p>
-<a href="#toc"><h3 id="r4.7.2">4.7.2. [FML] Формальное Назначение</h3></a>
-<p>Формальное Назначение отмечается ударением либо на последний, либо на четвертый с конца слог форматива, в зависимости от его Relation(смотрите раздел 6.4).</p>
+<a href="#top"><h3>4.7.2. [FML] Формальное Назначение</h3></a>
+<p>Формальное Назначение отмечается ударением либо на последний, либо на четвертый с конца слог форматива, в зависимости от его Связи(смотрите раздел 6.4).</p>
 <p>Формальное Назначение передает значение постоянности и/или авторитета, повышая существительное или глагол к более характерному, формальному или базисному проявлению самого себя, или к подчеркиванию авторитетной/определительной природы, если значение уже включает это. Например, основы, переводимые как &laquo;символ&raquo;, &laquo;есть&raquo;, &laquo;мысль&raquo; и &laquo;модель&raquo; в Неформальном Назначении, становятся &laquo;иконой&raquo;, &laquo;обедать&raquo;, &laquo;идея&raquo; и &laquo;архетип&raquo; в Формальном Назначении.</p>
 <p>Формальное Назначение добивается нескольких трудно уловимых целей с точки зрения лексико-семантики. В то время как некоторые слова Ифкуиль переводились бы одинаково в не зависимости от статуса (например, &laquo;повредить&raquo;, &laquo;плавать&raquo;, &laquo;дышать&raquo;, &laquo;падать&raquo;, &laquo;затенять&raquo;, &laquo;спать&raquo;, &laquo;кашлять&raquo;), многие основы имели бы различные переводы, в зависимости от их статуса. Например, основа <b>eq-</b>, с присоединенными значениями &laquo;человек &rarr; группа &rarr; скопление &rarr; толпа &rarr; толчея и т.п.&raquo; в Неформальном Назначении, изменились бы в следующую серию приблизительных переводов в Формальном Назначении: &laquo;официальное лицо &rarr; команда &rarr; ассоциация/конгрегация &rarr; ассамблея &rarr; массы и т.п.&raquo;.</p>
 <p>Дальнейшие примеры лексических сдвигов в переводе в зависимости от Неформального или Формального Назначения приведены ниже:</p>
@@ -4145,7 +4097,7 @@ STA-&lsquo;клоун&rsquo;-IND-<b>NRM/DEL/M/ASO/DCT</b>-FML
 </tr>
 </table>
 <p>Как может быть увидено из списка выше, точная интерпретация Назначения для каждого корня слова является специфичной для каждого корня слова, в зависимости от его связанного семантического контекста.</p>
-<a href="#toc"><h3 id="r4.7.3">4.7.3. Примеры использования Назначения</h3></a>
+<a href="#top"><h3>4.7.3. Примеры использования Назначения</h3></a>
 <table cellpadding="3" border class="center">
 <tr>
 <td>Неформальное</td>
@@ -4154,38 +4106,37 @@ STA-&lsquo;клоун&rsquo;-IND-<b>NRM/DEL/M/ASO/DCT</b>-FML
 </tr>
 <tr>
 <td><div class="modal" id="img96" onclick="modalWindow.show(document.getElementById('img96').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00096.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00096.PNG" class="small_imgs"></div><br>
 <b>klal</b> - "поток воды; течь"</td>
 <td><b>-&nbsp;&gt;</b></td>
 <td><div class="modal" id="img97" onclick="modalWindow.show(document.getElementById('img97').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00097.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00097.PNG" class="small_imgs"></div><br>
 <b>akl&aacute;l</b> - "река; течь подобно реке"</td>
 </tr>
 <tr>
 <td><div class="modal" id="img98" onclick="modalWindow.show(document.getElementById('img98').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00098.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00098.PNG" class="small_imgs"></div><br>
 <b>dyal</b> - "чувство; чувствовать (эмоционально)</td>
 <td><b>-&nbsp;&gt;</b></td>
 <td><div class="modal" id="img99" onclick="modalWindow.show(document.getElementById('img99').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00099.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00099.PNG" class="small_imgs"></div><br>
 <b>ady&aacute;l</b> - "чувство (волевое, взвешенное); изучать посредством чувств"</td>
 </tr>
 <tr>
 <td><div class="modal" id="img100" onclick="modalWindow.show(document.getElementById('img100').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00100.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00100.PNG" class="small_imgs"></div><br>
 <b>stal</b> - "сравнение; сравнивать"</td>
 <td><b>-&nbsp;&gt;</b></td>
 <td><div class="modal" id="img101" onclick="modalWindow.show(document.getElementById('img101').innerHTML);">
-    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/img00101.PNG" class="small_imgs"></div><br>
+    <img src="https://raw.githubusercontent.com/ITHKUIL-RUS/ithkuil-rus.github.io/master/imgs/r1-5/img00101.PNG" class="small_imgs"></div><br>
 <b>ast&aacute;l</b> - "мера, измерение"</td>
 </tr>
 </table>
-<a href="#toc"><h2 id="r4.8">4.8. О морфо-фонологическом соглашении</h2></a>
+<a href="#top"><h2 id="r4.8">4.8. О морфо-фонологическом соглашении</h2></a>
 <p>Относительно категорий рода в других языках, в Ифкуиле нет различений по родам(например, мужскому, женскому, среднему и т.д.). Нет никакого "соглашения" или морфо-фонологического согласования любого рода между существительным и другими словами или морфологическими элементами в предложении, то есть, нет никакого требуемого соответствия мужского или женского, или соглашения "единственное/множественное" между существительными, артиклями и прилагательными, в отличие от многих языков западного мира.</p>
-<a id="prev" href="r3.html">◀Раздел 3. Морфо-фонология</a>
-      <a id="next" href="r5.html">Раздел 5. Морфология падежа▶</a>
+<a id="prev" href="r3.html">◀&nbsp;Раздел 3. Морфо-фонология</a>
+      <a id="next" href="r5.html">Раздел 5. Морфология падежа&nbsp;▶</a>
     </div>
-    <div id="butts"><button id="down">➖</button><button id="up">➕</button></div>
   </body>
   <script defer type="text/javascript" src="../js/script.js"></script>
 </html>

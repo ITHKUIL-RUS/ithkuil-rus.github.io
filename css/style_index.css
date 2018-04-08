@@ -11,10 +11,10 @@ header, article, nav {
   }
 @media all and (orientation: portrait) {
     html{
-        font-size: 13px;
+        font-size: 15px;
     }
     .circle{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
  @media all and (orientation: landscape) {
@@ -43,8 +43,6 @@ nav a{
 	display: block;
 }
 div{
-	border-top: solid white 1px;
-	border-bottom: solid white 1px;
 	margin: 15px 0;
 }
 header{
@@ -64,7 +62,7 @@ p{
 	height: 20vw;
 	line-height: 20vw;
 	margin: 0;
-	border: double white 9px;
+	border: double white 7px;
 	border-radius: 10em;
 }
 table{
@@ -74,13 +72,12 @@ table{
 	width: 20vw;
 }
 .button{
+	width: 100vw;
 	position: relative;
-    font-size: 1.3rem;
-	left: calc(25vw - 1.2em - 10px);
+	left:-1.2em;
 	display: block;
-	width: 50vw;
-	margin: 5vw 0;
+	padding: 20px 0;
 	text-align: center;
-	padding: 20px;
-	border: 2px solid white;
+	background-color: whitesmoke;
+	color: black;
 }
