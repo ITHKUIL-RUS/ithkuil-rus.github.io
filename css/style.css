@@ -23,7 +23,8 @@
 	}
 }
 #content{
-    margin-bottom: 100px;
+    margin-top: calc(5vh + 10px);
+    margin-bottom: 25px;
 }
 
 html {
@@ -77,21 +78,11 @@ a:hover, a:focus, a:active{
 }
 #prev,
 #next {
-    margin-top: 15px;
+    margin-bottom: 15px;
     color: #333333;
     font-size: 0.9rem;
     position: absolute;
     width: 45%;
-}
-
-#next {
-    text-align: right;
-    right: 5%;
-}
-
-#prev {
-    text-align: left;
-    left: 5%;
 }
 
 .tab {
@@ -131,6 +122,20 @@ img.big_imgs {
 .example tr:nth-child(3){
 	font-size: 0.8rem;
 }
+.suffix{
+    width: 100%;
+}
+.suffix tr:first-child td:nth-child(2){
+	background-color: rgba(0, 0, 0, 0.075);
+	text-align: center;
+    width: 10%;
+}
+.suffix td:first-child{
+    vertical-align: top;
+	white-space: nowrap;
+    width: 15%;
+}
+
 select {
     width: 100%;
     border: none;
@@ -145,11 +150,11 @@ select {
 
 #scrollbar {
     position: fixed;
-    top: 0;
+    top: 5vh;
     left: 0;
     overflow: hidden;
     width: 0%;
-    height: 0.5vh;
+    height: 2px;
     z-index: 50;
 }
 
@@ -162,22 +167,31 @@ select {
     z-index: 75;
     background: #FF4515;
 }
-.exit{
-	position: fixed;
-	right: 6.5px;
-	top: -35px;
-	width: 70px;
-	height: 70px;
-	border-radius: 50px;
-	background: #fafafa;
-	z-index: 40;
-	text-transform: uppercase;
-	line-height: 100px;
-	font-size: 0.8rem;
-	border: solid black 1.5px;
-	text-align: center;
+.header{
+    background-color: white;
+    border-bottom: dashed black 2px;
+    height: 5vh;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 40; 
 }
-
+.prev{
+    left: 5%;
+    position: absolute;
+    top: calc(2.5vh - 0.7em);
+}
+.exit{
+    position: relative;
+    top: calc(2.5vh - 0.7em);
+}
+.next{
+    right: 5%;
+    position: absolute;
+    top: calc(2.5vh - 0.7em);
+}
 
 #blockscreen, #modalwindow {
         overflow-x: hidden;
@@ -190,10 +204,10 @@ select {
         right: 0;
         top: 0;
         bottom: 0;
-        z-index: 41;
+        z-index: 51;
       }
       #modalwindow {
-        z-index: 42;
+        z-index: 52;
         background: #fff;
         padding: 5px;
         border-radius: 5px;

@@ -1,83 +1,161 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext");
-
-body { 
-    font-family: "PT Sans", sans-serif;
-    background-color: #121212;
-    color: whitesmoke;
-    margin: 0;
-  }  
-header, article, nav {
-  padding: 1.2em;
-  }
-@media all and (orientation: portrait) {
+@import url("https://fonts.googleapis.com/css?family=Alegreya:400,700&subset=cyrillic,cyrillic-ext,latin-ext");
+@media screen and (orientation: landscape){
     html{
-        font-size: 15px;
+        font-size: 18px;
     }
-    .circle{
+    h1,
+    .head a{
+        font-size: 1rem;
+    }
+    .flex-circle{
+        background-position: calc(2.5vh + 1.55em) 3vh;
+        background-repeat: no-repeat;
+        background-size: 25vh;
+        height: 30vh;
+        padding-left: 1.55em;
+        width: 30vh;
+    }
+    .ref{
+        font-size: 1rem;
+        top: calc(30vh + 10px);
+        width: 30vh;
+    }
+    #circle:nth-child(2){
         font-size: 1.4rem;
     }
 }
- @media all and (orientation: landscape) {
+
+@media screen and (orientation: portrait){
     html{
-        font-size: 20px;
+        font-size: 13px;
     }
-    .circle{
-        font-size: 4rem;
+    h1{
+        font-size: 1.2rem;
     }
-}   	
-a{
-	font-weight: bold;
-	color: white;
-	text-decoration: none;
+    
+    .head a{
+        font-size: 1rem;
+        max-width: 15vw;
+   }
+    
+    .flex,
+    .flex-first{
+		margin: 0;
+		padding: 0;
+	}
+    .flex-circle{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 35vh;
+        height: 40vh;
+        width: 40vh;
+    }
+    .ref{
+        font-size: 1.25rem;
+        margin-top: -20px;
+        top: calc(40vh + 10px);
+        width: 40vh;
+    }
+    #circle:nth-child(2){
+        font-size: 1rem;
+    }
+}
+
+.ref{
+    border: dashed black 2px;
+    display: block;
+    left: -5px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+h1,
+.head a{
+    overflow: hidden;    
+    position: relative;
+    top: calc(2.5vh - 1.35em);
+    text-overflow: ellipsis;        
+    white-space: nowrap;
+}
+body{
+    font-family: Alegreya, serif;
+    margin: 0;
+    width: 100%;
+}
+a {
+	color: black;
+    text-decoration: none;
+    border-bottom: dashed #FF4515 1px;
 }
 a:hover, a:focus, a:active{
 	color: #FF4515;
 }
-nav{
-	background-color: whitesmoke;
+
+.flex,
+.flex-first{
+    align-items: center;
+    border-bottom: dashed black 2px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    min-height: calc(95vh - 2px);
+    width: 100vw;
 }
-nav a{
-	color: #151212;
-	padding: 5px 0;
-	text-transform: uppercase;
-	display: block;
+.flex-first{
+    margin: 5vh 0 0 0;
 }
-div{
-	margin: 15px 0;
+
+.flex-circle{
+    border-radius: 100%;
+    margin-bottom: 50px;
 }
-header{
-	text-align: center;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 1.25rem;
+.flex-text{
+    flex: 50vw;
+    margin-left: 0;
+    margin-top: -30px;
+    padding: 15px;
 }
-p{
-	line-height: 130%;
-	margin-top: 0;
+.head{
+    background-color: whitesmoke;
+    border-bottom: dashed black 2px;
+    height: 5vh;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
 }
-.circle{
-	text-align: center;
-	vertical-align: middle;
-	width: 20vw;
-	height: 20vw;
-	line-height: 20vw;
-	margin: 0;
-	border: double white 7px;
-	border-radius: 10em;
+ 
+.text {
+    color: black;
+    font-size: 1.2rem;
+    margin: 0 0 0 0;
 }
-table{
-	border-collapse: collapse;
+
+.header {
+    color: #ff4515;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.flex-text:nth-child(1){
+    margin-top: 0;
 }
 #circle td{
-	width: 20vw;
+    text-align: center;
+    width: 20%;
 }
-.button{
-	width: 100vw;
-	position: relative;
-	left:-1.2em;
-	display: block;
-	padding: 20px 0;
-	text-align: center;
-	background-color: whitesmoke;
-	color: black;
+.circle{
+    font-size: 3rem;
+}
+
+.head a{
+    left: 1.55em;
+    position: absolute;
+    top: calc(2.5vh - 0.75em);
 }
