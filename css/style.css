@@ -125,6 +125,9 @@ img.big_imgs {
 .suffix{
     width: 100%;
 }
+.suffix tr:first-child td:first-child{
+	vertical-align: middle;
+}
 .suffix tr:first-child td:nth-child(2){
 	background-color: rgba(0, 0, 0, 0.075);
 	text-align: center;
