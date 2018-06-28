@@ -9,6 +9,9 @@
 		padding-left: 10px;
 		border-left: solid #121212 3px;
 	}
+    img.big_imgs {
+        width: 100%;
+    }
 }
 
 @media screen and (orientation: landscape) {
@@ -21,6 +24,9 @@
 		padding-left: 30px;
 		border-left: solid #121212 5px;
 	}
+    img.big_imgs {
+        width: 50%;
+    }
 }
 #content{
     margin-top: calc(5vh + 10px);
@@ -113,9 +119,7 @@ img.medium_imgs {
     height: 12.5vh;
 }
 
-img.big_imgs {
-    width: 100%;
-}
+
 .example tr:nth-child(2){
 	font-size: 1.2rem;
 }
