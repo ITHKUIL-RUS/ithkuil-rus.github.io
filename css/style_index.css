@@ -2,6 +2,7 @@
 @media screen and (orientation: landscape){
     html{
         font-size: 18px;
+        background-color: whitesmoke;
     }
     h1,
     .head a{
@@ -27,6 +28,7 @@
 
 @media screen and (orientation: portrait){
     html{
+        background-color: whitesmoke;
         font-size: 13px;
     }
     h1{
