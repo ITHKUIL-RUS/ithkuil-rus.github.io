@@ -27,6 +27,10 @@
     img.big_imgs {
         width: 50%;
     }
+    #content{
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
 }
 #content{
     margin-top: calc(5vh + 10px);
@@ -99,12 +103,21 @@ a:hover, a:focus, a:active{
     text-align: center;
 }
 
-table {
+table{
     overflow-x: auto;
-    display: block;
-    border: none;
     vertical-align: middle;
     border-collapse: collapse;
+    max-width: 100%;
+    display: block;
+}
+
+table.example {
+    border: none;
+}
+
+table:not(.example) td{
+    padding: 6px 12px;
+    border: solid #333333 0.5px;
 }
 
 td.highlighted {
