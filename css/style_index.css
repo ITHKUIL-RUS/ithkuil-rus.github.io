@@ -2,7 +2,7 @@
 @media screen and (orientation: landscape){
     html{
         font-size: 18px;
-        background-color: whitesmoke;
+        background-color: #fafafa;
     }
     h1,
     .head a{
@@ -28,7 +28,7 @@
 
 @media screen and (orientation: portrait){
     html{
-        background-color: whitesmoke;
+        background-color: #fafafa;
         font-size: 13px;
     }
     h1{
@@ -64,7 +64,7 @@
 }
 
 .ref{
-    border: dashed black 2px;
+    border: dashed #121212 2px;
     display: block;
     left: -5px;
     padding: 5px;
@@ -96,14 +96,14 @@ a:hover, a:focus, a:active{
 .flex,
 .flex-first{
     align-items: center;
-    border-bottom: dashed black 2px;
-    background-color: whitesmoke;
+    border-bottom: dashed #121212 2px;
+    background-color: #fafafa;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0;
     min-height: calc(95vh - 2px);
-    width: 100vw;
+    padding: 0 15vw;
 }
 .flex-first{
     margin: 5vh 0 0 0;
@@ -120,8 +120,8 @@ a:hover, a:focus, a:active{
     padding: 15px;
 }
 .head{
-    background-color: whitesmoke;
-    border-bottom: dashed black 2px;
+    background-color: #fafafa;
+    border-bottom: dashed #121212 2px;
     height: 5vh;
     left: 0;
     margin: 0;

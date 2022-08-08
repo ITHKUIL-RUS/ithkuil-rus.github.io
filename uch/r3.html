@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ифкуиль. Морфо-фонология.</title>
     <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/custom-select.css">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
   </head>
   <body>
@@ -15,23 +16,9 @@
           <a href="../index_html/uch.html" class="exit">Выход</a>
           <a href="r4.html" class="next">Раздел 4&nbsp;▶</a>
       </div>
-      <h1><select name='top' onchange="document.location=this.options[this.selectedIndex].value">
-        <option value="r0.html">От автора</option>
-        <option value='r1.html'>1. Введение</option>
-        <option value="r2.html">2. Фонология</option>
-        <option selected value='r3.html'>3. Морфо-фонология</option>
-        <option value='r4.html'>4. Базовая морфология</option>
-        <option value='r5.html'>5. Морфология Падежа</option>
-        <option value='r6.html'>6. Морфология глагола</option>
-        <option value='r7.html'>7. Дополнительная морфология глагола</option>
-        <option value='r8.html'>8. Суффиксы</option>
-        <option value="r9.html">9. Определители</option>
-        <option value="r10.html">10. Синтаксис</option>
-        <option value="r11.html">11. Лексико-семантика</option>
-        <option value="r12.html">12. Система написания</option>
-        <option value="r13.html">13. Система счисления</option>
-        <option value="r14.html">14. Математический подъязык</option>
-        </select></h1>
+      <div class="container">
+        <h1 id="header_select"></h1>
+      </div>
       <nav>
 	  <a href="#r3.1">3.1. Грамматическая типология</a><br>
       <a href="#r3.2">3.2. Строение корня и основы</a><br>
@@ -655,4 +642,5 @@ Cb = <b>&rsquo;ks</b>, показывает Скептичное Отношен�
     </div>
   </body>
   <script defer type="text/javascript" src="../js/script.js"></script>
+	<script defer src="../js/custom-select.js"></script>
 </html>
