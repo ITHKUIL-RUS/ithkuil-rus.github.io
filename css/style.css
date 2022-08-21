@@ -46,10 +46,7 @@ body {
     margin: 0px;
 }
 
-nav {
-	padding-top: 5px;
-	padding-bottom: 3px;
-	padding-left: 15px;
+nav.nav_main {
     border-bottom: solid black 1px;
 }
 
@@ -212,33 +209,4 @@ select {
     right: 5%;
     position: absolute;
     top: calc(2.5vh - 0.7em);
-}
-
-#blockscreen, #modalwindow {
-        overflow-x: hidden;
-        overflow-y: auto;
-        position: fixed;
-      }
-      #blockscreen {
-        background: rgba(0, 0, 0, .5);
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: 51;
-      }
-      #modalwindow {
-        z-index: 52;
-        background: #fff;
-        padding: 5px;
-        border-radius: 5px;
-        border: 1px solid #a1a1a1;
-        box-shadow: 0 0 10px #444;
-      }
-      #modalwindow img{
-        height: 60vh;
-        width: auto;
-      }
-      .modal{
-        display: inline-block;
 }

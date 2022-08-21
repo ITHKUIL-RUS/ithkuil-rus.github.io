@@ -1,0 +1,68 @@
+.nav_header ul {
+    list-style: none;
+    padding: 0;
+    margin: 2px 0;
+}
+.nav_header li {
+    position: relative;
+}
+.nav_header a {
+    background: #fafafa;
+    color: #121212;
+    display: block;
+    font-weight: normal;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+/* Убираем стандартный маркер Chrome */
+.nav_header summary::-webkit-details-marker {
+    display: none;
+}
+/* Убираем стандартный маркер Firefox */
+.nav_header summary {
+    list-style: none;
+}
+
+.nav_header summary {
+    position: absolute;
+    min-width: 50px;
+    width: 10%;
+    display: flex;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 0;
+    background: #fafafa;
+    cursor: pointer;
+    color: #121212;
+    justify-content: space-around;
+}
+.nav_header a:hover,
+.nav_header summary:hover {
+    background-color: #ff4515;
+    color: #fafafa;
+}
+
+.nav_header summary:before {
+    content: "🡻";
+    transition: transform 0.2s;
+    will-change: transform;
+}
+
+.nav_header details[open] > summary:before {
+    transform: rotate(180deg);
+}
+.nav_header{
+    display: block;
+    font-size: 1rem;
+}
+.nav_r3 a{
+    font-size: 0.9rem;
+    padding-left: 2rem;
+    width: calc(100% - 2.5rem);
+}
+.nav_r4 a{
+    font-size: 0.8rem;
+    padding-left: 4rem;
+    width: calc(100% - 4.5rem);
+}
