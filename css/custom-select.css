@@ -23,7 +23,7 @@
 
 .select__toggle::after {
     content: "🡻";
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     transition: transform 0.2s;
     will-change: transform;
 }
@@ -87,7 +87,7 @@
 
 
 :root{
-  scrollbar-color: #ff4515 #fafafa;
+  scrollbar-color: #ff4515 #333333;
   scrollbar-width: thin;
 }
 

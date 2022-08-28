@@ -1,4 +1,4 @@
- window.onload = function() {
+ formContents = function() {
     function resize_summary(element, new_height) {
       element.style.height = new_height + "px";
     }
@@ -8,7 +8,7 @@
     var headers_r3 = document.querySelectorAll('h3');
     var headers_r4 = document.querySelectorAll('h4');
     let nav = document.getElementsByTagName("nav")[0];
-    for(index = 0; index < header_collection.length; index++) {
+    for (index = 0; index < header_collection.length; index++) {
         let dot = header_collection[index].innerHTML.lastIndexOf('.');
         header_collection[index].id = "r" + header_collection[index].innerHTML.slice(0, dot);
         let tmp_nav = document.createElement("nav");
@@ -47,3 +47,35 @@
         }
     }
 };
+
+//чтобы заголовок не перекрывался верхним меню
+setListenerOnNav = function(){  
+        for (i = 0; i < document.querySelectorAll(".nav_header a").length; i++){
+        document.querySelectorAll(".nav_header a").item(i).addEventListener(
+            'click', fixLinks, false
+        );
+        document.querySelectorAll("a[href='#top']").item(i).addEventListener(
+            'click', smoothScroll, false
+        );
+    }
+}
+fixLinks = function(event) {
+    event.preventDefault();
+    let headerNumber = Array.from(document.querySelectorAll(".nav_header a")).indexOf(this);
+    let newScrollPosition = document.querySelectorAll('h2, h3, h4').item(headerNumber).offsetTop;
+    window.scrollTo({
+        top: newScrollPosition - 70,
+        behavior: "smooth"
+    });
+}
+//чтобы все ссылки внутри документа работали плавно и красиво
+smoothScroll = function(event) {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+//чтобы оглавление, с которым работаем, успело прогрузиться
+letPageLoad = window.setTimeout(formContents, 50);
+letPageLoad = window.setTimeout(setListenerOnNav, 50);

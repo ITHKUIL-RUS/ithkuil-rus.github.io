@@ -186,7 +186,7 @@ select {
     background: #FF4515;
 }
 .header{
-    background-color: white;
+    background-color: #fafafa;
     border-bottom: dashed black 2px;
     height: 5vh;
     left: 0;
@@ -195,11 +195,18 @@ select {
     top: 0;
     width: 100%;
     z-index: 40; 
+    
+    font-weight: bold;
 }
 .prev{
     left: 5%;
     position: absolute;
     top: calc(2.5vh - 0.7em);
+}
+.prev::before {
+  content: "🡸";
+    padding-right: 0.5rem;
+  color: #121212;
 }
 .exit{
     position: relative;
@@ -209,4 +216,13 @@ select {
     right: 5%;
     position: absolute;
     top: calc(2.5vh - 0.7em);
+}
+.next::after {
+  content: "🡺";
+    padding-left: 0.5rem;
+  color: #121212;
+}
+.prev:hover::before, 
+.next:hover::after{
+    color: #ff4515;
 }
